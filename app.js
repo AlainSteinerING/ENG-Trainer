@@ -68,17 +68,30 @@ async function init() {
     saveItems();
   } else {
     // Merge: Neue Items aus content.json hinzufügen, die noch nicht im State sind
-    const existingKeys = new Set(state.items.map(i => makeKey(i)));
+    // UND: bestehende Items mit fehlenden Feldern aus content.json reparieren (z.B. lines bei Dialogen)
+    const existingByKey = new Map(state.items.map(i => [makeKey(i), i]));
     let added = 0;
+    let repaired = 0;
     content.items.forEach((item, i) => {
-      if (!existingKeys.has(makeKey(item))) {
+      const key = makeKey(item);
+      const existing = existingByKey.get(key);
+      if (!existing) {
         state.items.push(createNewItem(item, state.items.length + i));
         added++;
+      } else if (item.type === 'dialogue' && (!existing.lines || existing.lines.length === 0)) {
+        // Bestehender Dialog ohne lines → reparieren, Lernfortschritt behalten
+        existing.lines = item.lines || [];
+        existing.title = item.title || existing.title || '';
+        existing.type = 'dialogue';
+        repaired++;
       }
     });
-    if (added > 0) {
+    if (added > 0 || repaired > 0) {
       saveItems();
-      showToast(`${added} neue Einträge geladen`);
+      let msg = '';
+      if (added > 0) msg += `${added} neu`;
+      if (repaired > 0) msg += (msg ? ', ' : '') + `${repaired} aktualisiert`;
+      showToast(msg + ' geladen');
     }
   }
 
@@ -319,7 +332,14 @@ function renderDialogues(content) {
   const item = due[0];
   state.currentItem = item;
   const cat = state.categories[item.cat] || { label: item.cat };
-  const lines = item.lines || [];
+
+  // Fallback: Falls lines fehlen (Bestandsdaten), aus de/en Text rekonstruieren
+  let lines = item.lines;
+  if (!lines || lines.length === 0) {
+    const deLines = (item.de || '').split('\n');
+    const enLines = (item.en || '').split('\n');
+    lines = deLines.map((de, i) => ({ de, en: enLines[i] || '' }));
+  }
 
   // Dialog-Zeilen rendern (mit alternierenden Sprechern A/B)
   const renderLines = (key) => lines.map((line, idx) => {
@@ -327,7 +347,7 @@ function renderDialogues(content) {
     return `
       <div class="dialog-line">
         <span class="dialog-speaker speaker-${speaker.toLowerCase()}">${speaker}</span>
-        <span class="dialog-text">${escapeHtml(line[key])}</span>
+        <span class="dialog-text">${escapeHtml(line[key] || '')}</span>
       </div>
     `;
   }).join('');
