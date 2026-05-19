@@ -254,6 +254,57 @@ button {
   color: var(--text-3);
 }
 
+/* ============ Dialog-Card Styling ============ */
+.dialog-card {
+  min-height: 360px;
+}
+.dialog-card .flip-inner {
+  min-height: 360px;
+}
+.dialog-face {
+  justify-content: flex-start;
+  padding: 22px 18px 36px;
+  text-align: left;
+}
+.dialog-lines {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 4px;
+}
+.dialog-line {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: 15px;
+  line-height: 1.45;
+}
+.dialog-speaker {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 600;
+  margin-top: 1px;
+}
+.speaker-a {
+  background: var(--info-bg);
+  color: var(--info);
+}
+.speaker-b {
+  background: var(--success-bg);
+  color: var(--success);
+}
+.dialog-text {
+  flex: 1;
+  color: var(--text);
+}
+
 /* ============ Rating Buttons ============ */
 .rating-row {
   display: grid;

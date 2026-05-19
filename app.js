@@ -91,7 +91,7 @@ function makeKey(item) {
 }
 
 function createNewItem(base, idx) {
-  return {
+  const item = {
     id: 'i_' + Date.now() + '_' + idx + '_' + Math.random().toString(36).slice(2, 7),
     de: base.de,
     en: base.en,
@@ -107,6 +107,12 @@ function createNewItem(base, idx) {
     correctCount: 0,
     seenCount: 0,
   };
+  // Bei Dialogen: zusätzliche Felder übernehmen
+  if (base.type === 'dialogue') {
+    item.lines = base.lines || [];
+    item.title = base.title || '';
+  }
+  return item;
 }
 
 // ============ SM-2 Algorithm ============
@@ -133,9 +139,13 @@ function updateCard(item, quality) {
   item.nextReview = Date.now() + item.interval * 24 * 60 * 60 * 1000;
 }
 
-function getDueItems() {
+function getDueItems(opts = {}) {
   const now = Date.now();
-  let due = state.items.filter(i => i.nextReview <= now);
+  // Standard: keine Dialoge im Lern-View (die haben eigenen Tab)
+  const includeTypes = opts.types || ['phrase', 'vocab'];
+  let due = state.items.filter(i =>
+    i.nextReview <= now && includeTypes.includes(i.type || 'phrase')
+  );
   if (state.filterCategory) due = due.filter(i => i.cat === state.filterCategory);
   if (state.filterType) due = due.filter(i => i.type === state.filterType);
 
@@ -148,6 +158,10 @@ function getDueItems() {
   return due;
 }
 
+function getDueDialogues() {
+  return getDueItems({ types: ['dialogue'] });
+}
+
 // ============ Render ============
 function render() {
   document.querySelectorAll('.tab-btn').forEach(b => {
@@ -157,6 +171,7 @@ function render() {
 
   const content = document.getElementById('content');
   if (state.view === 'learn') renderLearn(content);
+  else if (state.view === 'dialogues') renderDialogues(content);
   else if (state.view === 'categories') renderCategories(content);
   else if (state.view === 'manage') renderManage(content);
   else if (state.view === 'stats') renderStats(content);
@@ -240,7 +255,7 @@ function renderLearn(content) {
             <div class="card-text">${escapeHtml(item.de)}</div>
             <div class="card-hint">Antippen zum Umdrehen</div>
           </div>
-      <div class="flip-face flip-back">
+          <div class="flip-face flip-back">
             <div class="card-cat">English</div>
             <div class="card-text">${escapeHtml(item.en)}</div>
             <div class="card-hint">Antippen zum Zurückdrehen</div>
@@ -260,9 +275,99 @@ function renderLearn(content) {
   }
 }
 
+// ============ Dialog-View ============
+function renderDialogues(content) {
+  const due = getDueDialogues();
+
+  // Filter-Banner für Dialog-Kategorie
+  const filterBannerHTML = state.filterCategory ? `
+    <div class="filter-banner">
+      <span>Filter: ${state.categories[state.filterCategory]?.label || state.filterCategory}</span>
+      <button class="filter-clear" onclick="clearFilter()">Entfernen</button>
+    </div>
+  ` : '';
+
+  if (due.length === 0) {
+    const allDialogues = state.items.filter(i => i.type === 'dialogue');
+    if (allDialogues.length === 0) {
+      content.innerHTML = `
+        <div class="empty-state">
+          <div class="empty-icon">💬</div>
+          <h3>Keine Dialoge vorhanden</h3>
+          <p>Lade neue Dialoge per Import, oder warte auf das nächste Content-Update.</p>
+        </div>
+      `;
+      return;
+    }
+    const next = allDialogues
+      .filter(i => !state.filterCategory || i.cat === state.filterCategory)
+      .sort((a, b) => a.nextReview - b.nextReview)[0];
+    const nextTime = next ? new Date(next.nextReview) : null;
+    content.innerHTML = `
+      ${filterBannerHTML}
+      <div class="empty-state">
+        <div class="empty-icon">✓</div>
+        <h3>Alle Dialoge erledigt!</h3>
+        <p>Keine Dialoge fällig${state.filterCategory ? ' in dieser Kategorie' : ''}.</p>
+        ${nextTime ? `<p style="font-size:12px;">Nächster Dialog: ${formatTime(nextTime)}</p>` : ''}
+        ${state.filterCategory ? '<button class="btn" onclick="clearFilter()">Alle Kategorien zeigen</button>' : ''}
+      </div>
+    `;
+    return;
+  }
+
+  const item = due[0];
+  state.currentItem = item;
+  const cat = state.categories[item.cat] || { label: item.cat };
+  const lines = item.lines || [];
+
+  // Dialog-Zeilen rendern (mit alternierenden Sprechern A/B)
+  const renderLines = (key) => lines.map((line, idx) => {
+    const speaker = idx % 2 === 0 ? 'A' : 'B';
+    return `
+      <div class="dialog-line">
+        <span class="dialog-speaker speaker-${speaker.toLowerCase()}">${speaker}</span>
+        <span class="dialog-text">${escapeHtml(line[key])}</span>
+      </div>
+    `;
+  }).join('');
+
+  content.innerHTML = `
+    ${filterBannerHTML}
+    <div class="mode-bar">
+      <span class="pill">💬 Dialog · ${cat.label}</span>
+      <span class="pill">${due.length} fällig</span>
+    </div>
+    <div class="flip-card dialog-card" id="flip-card" onclick="flipCard()">
+      <div class="flip-inner">
+        <div class="flip-face dialog-face">
+          <div class="card-cat">${escapeHtml(item.title || cat.label)}</div>
+          <div class="dialog-lines">${renderLines('de')}</div>
+          <div class="card-hint">Antippen zum Umdrehen</div>
+        </div>
+        <div class="flip-face flip-back dialog-face">
+          <div class="card-cat">English</div>
+          <div class="dialog-lines">${renderLines('en')}</div>
+          <div class="card-hint">Antippen zum Zurückdrehen</div>
+        </div>
+      </div>
+    </div>
+    <div id="rating-area" style="display:none;">
+      <p class="section-title" style="text-align:center;">Wie gut konntest du den Dialog übersetzen?</p>
+      <div class="rating-row">
+        <button class="rating-btn again" onclick="rateCard(0)">Nochmal</button>
+        <button class="rating-btn" onclick="rateCard(1)">Schwer</button>
+        <button class="rating-btn" onclick="rateCard(2)">Gut</button>
+        <button class="rating-btn easy" onclick="rateCard(3)">Einfach</button>
+      </div>
+    </div>
+  `;
+}
+
 function renderCategories(content) {
   const phraseCats = Object.entries(state.categories).filter(([k, c]) => c.type === 'phrase');
   const vocabCats = Object.entries(state.categories).filter(([k, c]) => c.type === 'vocab');
+  const dialogueCats = Object.entries(state.categories).filter(([k, c]) => c.type === 'dialogue');
 
   let html = '';
   if (state.filterCategory) {
@@ -278,23 +383,30 @@ function renderCategories(content) {
 
   html += `<div class="cat-section-title">📣 Sätze (${phraseCats.length})</div>`;
   html += '<div class="cat-list">';
-  phraseCats.forEach(([key, cat]) => html += renderCategoryRow(key, cat));
+  phraseCats.forEach(([key, cat]) => html += renderCategoryRow(key, cat, 'learn'));
   html += '</div>';
 
   html += `<div class="cat-section-title">📖 Vokabeln (${vocabCats.length})</div>`;
   html += '<div class="cat-list">';
-  vocabCats.forEach(([key, cat]) => html += renderCategoryRow(key, cat));
+  vocabCats.forEach(([key, cat]) => html += renderCategoryRow(key, cat, 'learn'));
   html += '</div>';
+
+  if (dialogueCats.length > 0) {
+    html += `<div class="cat-section-title">💬 Dialoge (${dialogueCats.length})</div>`;
+    html += '<div class="cat-list">';
+    dialogueCats.forEach(([key, cat]) => html += renderCategoryRow(key, cat, 'dialogues'));
+    html += '</div>';
+  }
 
   content.innerHTML = html;
 }
 
-function renderCategoryRow(key, cat) {
+function renderCategoryRow(key, cat, targetView = 'learn') {
   const items = state.items.filter(i => i.cat === key);
   const due = items.filter(i => i.nextReview <= Date.now()).length;
   const mastered = items.filter(i => i.reps >= 3).length;
   return `
-    <div class="cat-item" onclick="selectCategory('${key}')">
+    <div class="cat-item" onclick="selectCategory('${key}', '${targetView}')">
       <div class="cat-info">
         <div class="cat-icon">${getCatIcon(cat.icon)}</div>
         <div>
@@ -376,6 +488,7 @@ function renderStats(content) {
 
   const phrasesCount = state.items.filter(i => i.type === 'phrase').length;
   const vocabsCount = state.items.filter(i => i.type === 'vocab').length;
+  const dialoguesCount = state.items.filter(i => i.type === 'dialogue').length;
 
   content.innerHTML = `
     <div class="stat-grid">
@@ -409,8 +522,8 @@ function renderStats(content) {
 
     <div class="progress-card">
       <div style="display:flex;justify-content:space-between;align-items:center;">
-        <span style="font-size:13px;">Sätze / Vokabeln</span>
-        <span style="font-size:13px;font-weight:600;">${phrasesCount} / ${vocabsCount}</span>
+        <span style="font-size:13px;">Sätze / Vokabeln / Dialoge</span>
+        <span style="font-size:13px;font-weight:600;">${phrasesCount} / ${vocabsCount} / ${dialoguesCount}</span>
       </div>
     </div>
 
@@ -447,6 +560,7 @@ function getCatIcon(iconName) {
     'ti-video': '📹', 'ti-briefcase': '💼', 'ti-currency-euro': '€', 'ti-shopping-cart': '🛒',
     'ti-bolt': '⚡', 'ti-clock': '🕐', 'ti-tag': '🏷', 'ti-link': '🔗',
     'ti-device-laptop': '💻', 'ti-coffee': '☕',
+    'ti-alert-circle': '⚠️', 'ti-presentation': '🎤',
   };
   return map[iconName] || '📌';
 }
@@ -497,6 +611,7 @@ function flipCard() {
   if (!fc) return;
   fc.classList.toggle('flipped');
   state.cardFlipped = fc.classList.contains('flipped');
+  // Rating-Buttons erscheinen nach erstem Umdrehen und bleiben danach sichtbar
   if (state.cardFlipped) {
     document.getElementById('rating-area').style.display = 'block';
   }
@@ -547,9 +662,9 @@ function skipToFlashcard() {
   render();
 }
 
-function selectCategory(key) {
+function selectCategory(key, targetView = 'learn') {
   state.filterCategory = key;
-  state.view = 'learn';
+  state.view = targetView;
   render();
 }
 
@@ -713,16 +828,28 @@ function handleImport(event) {
       // Kategorie validieren - bei unbekannter Kategorie als 'business' einsortieren
       let cat = item.cat;
       if (!validCats.has(cat)) {
-        cat = (item.type === 'vocab' || !item.type) ? 'business' : 'opinion';
+        cat = item.type === 'vocab' ? 'business' : (item.type === 'dialogue' ? 'meeting_start' : 'opinion');
         invalidCat++;
       }
 
-      state.items.push(createNewItem({
+      // Type bestimmen (phrase, vocab, dialogue)
+      let type = 'phrase';
+      if (item.type === 'vocab') type = 'vocab';
+      else if (item.type === 'dialogue') type = 'dialogue';
+
+      const newItem = {
         de: item.de.trim(),
         en: item.en.trim(),
         cat,
-        type: item.type === 'vocab' ? 'vocab' : 'phrase',
-      }, state.items.length + added));
+        type,
+      };
+      // Dialog-Felder übernehmen
+      if (type === 'dialogue') {
+        newItem.lines = Array.isArray(item.lines) ? item.lines : [];
+        newItem.title = item.title || '';
+      }
+
+      state.items.push(createNewItem(newItem, state.items.length + added));
       existingKeys.add(makeKey(item));
       added++;
     });
@@ -746,11 +873,18 @@ function exportData() {
     version: '1.0',
     exportedAt: new Date().toISOString(),
     categories: state.categories,
-    items: state.items.map(i => ({
-      de: i.de, en: i.en, cat: i.cat, type: i.type,
-      // Lernfortschritt mitexportieren
-      reps: i.reps, ef: i.ef, interval: i.interval, level: i.level,
-    })),
+    items: state.items.map(i => {
+      const base = {
+        de: i.de, en: i.en, cat: i.cat, type: i.type,
+        // Lernfortschritt mitexportieren
+        reps: i.reps, ef: i.ef, interval: i.interval, level: i.level,
+      };
+      if (i.type === 'dialogue') {
+        base.lines = i.lines;
+        base.title = i.title;
+      }
+      return base;
+    }),
   };
   const blob = new Blob([JSON.stringify(exportObj, null, 2)], { type: 'application/json' });
   const url = URL.createObjectURL(blob);

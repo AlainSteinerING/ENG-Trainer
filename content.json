@@ -50,7 +50,7 @@
     "negotiation": {
       "label": "Verhandlung",
       "icon": "ti-arrows-exchange",
-      "type": "phrase"
+      "type": "dialogue"
     },
     "project": {
       "label": "Projekt & Deadlines",
@@ -111,6 +111,36 @@
       "label": "Smalltalk & Persönlich",
       "icon": "ti-coffee",
       "type": "vocab"
+    },
+    "meeting_start": {
+      "label": "Meeting starten & Smalltalk",
+      "icon": "ti-hand-stop",
+      "type": "dialogue"
+    },
+    "status_update": {
+      "label": "Status & Reporting",
+      "icon": "ti-chart-bar",
+      "type": "dialogue"
+    },
+    "problem_solving": {
+      "label": "Probleme klären",
+      "icon": "ti-alert-circle",
+      "type": "dialogue"
+    },
+    "scheduling": {
+      "label": "Termin koordinieren",
+      "icon": "ti-calendar-event",
+      "type": "dialogue"
+    },
+    "presentation": {
+      "label": "Präsentation & Q&A",
+      "icon": "ti-presentation",
+      "type": "dialogue"
+    },
+    "interview": {
+      "label": "Interview & Bewerbung",
+      "icon": "ti-briefcase",
+      "type": "dialogue"
     }
   },
   "items": [
@@ -3713,6 +3743,741 @@
       "en": "so-so",
       "cat": "smalltalk",
       "type": "vocab"
+    },
+    {
+      "de": "Hi Mark, schön dich zu sehen. Wie war dein Wochenende?\nSehr entspannt, danke. Ich war mit meiner Familie wandern. Und bei dir?\nKlingt schön. Ich hatte ein paar Freunde zu Besuch. Sollen wir anfangen?",
+      "en": "Hi Mark, good to see you. How was your weekend?\nPretty relaxed, thanks. I went hiking with my family. How about you?\nSounds nice. I had some friends over. Shall we get started?",
+      "cat": "meeting_start",
+      "type": "dialogue",
+      "title": "Erster Smalltalk vor Meeting",
+      "lines": [
+        {
+          "de": "Hi Mark, schön dich zu sehen. Wie war dein Wochenende?",
+          "en": "Hi Mark, good to see you. How was your weekend?"
+        },
+        {
+          "de": "Sehr entspannt, danke. Ich war mit meiner Familie wandern. Und bei dir?",
+          "en": "Pretty relaxed, thanks. I went hiking with my family. How about you?"
+        },
+        {
+          "de": "Klingt schön. Ich hatte ein paar Freunde zu Besuch. Sollen wir anfangen?",
+          "en": "Sounds nice. I had some friends over. Shall we get started?"
+        }
+      ]
+    },
+    {
+      "de": "Lass mich mich kurz vorstellen. Ich bin Sergej von Don Carne.\nIch bin für unseren Online-Shop und das Feed-Management verantwortlich.\nSchön, euch kennenzulernen. Ich freue mich auf die Zusammenarbeit.",
+      "en": "Let me briefly introduce myself. I'm Sergej from Don Carne.\nI'm in charge of our online shop and feed management.\nNice to meet you all. I'm looking forward to working together.",
+      "cat": "meeting_start",
+      "type": "dialogue",
+      "title": "Vorstellung in neuem Meeting",
+      "lines": [
+        {
+          "de": "Lass mich mich kurz vorstellen. Ich bin Sergej von Don Carne.",
+          "en": "Let me briefly introduce myself. I'm Sergej from Don Carne."
+        },
+        {
+          "de": "Ich bin für unseren Online-Shop und das Feed-Management verantwortlich.",
+          "en": "I'm in charge of our online shop and feed management."
+        },
+        {
+          "de": "Schön, euch kennenzulernen. Ich freue mich auf die Zusammenarbeit.",
+          "en": "Nice to meet you all. I'm looking forward to working together."
+        }
+      ]
+    },
+    {
+      "de": "Sorry, könnt ihr mich hören? Mein Mikro hat gerade gesponnen.\nJa, jetzt geht's. Lass mich kurz meine Kopfhörer wechseln.\nPerfekt, jetzt ist alles klar. Sollen wir mit der Agenda starten?",
+      "en": "Sorry, can you hear me? My mic was acting up.\nYes, it's working now. Let me switch headphones quickly.\nGreat, all clear now. Shall we start with the agenda?",
+      "cat": "meeting_start",
+      "type": "dialogue",
+      "title": "Technische Probleme zu Beginn",
+      "lines": [
+        {
+          "de": "Sorry, könnt ihr mich hören? Mein Mikro hat gerade gesponnen.",
+          "en": "Sorry, can you hear me? My mic was acting up."
+        },
+        {
+          "de": "Ja, jetzt geht's. Lass mich kurz meine Kopfhörer wechseln.",
+          "en": "Yes, it's working now. Let me switch headphones quickly."
+        },
+        {
+          "de": "Perfekt, jetzt ist alles klar. Sollen wir mit der Agenda starten?",
+          "en": "Great, all clear now. Shall we start with the agenda?"
+        }
+      ]
+    },
+    {
+      "de": "Sorry für die Verspätung, mein vorheriges Meeting hat überzogen.\nKein Problem. Wir haben gerade erst mit Smalltalk angefangen.\nDanke. Gibt es etwas, das ich verpasst habe?",
+      "en": "Sorry I'm late, my previous meeting ran over.\nNo worries. We just started with some small talk.\nThanks. Is there anything I missed?",
+      "cat": "meeting_start",
+      "type": "dialogue",
+      "title": "Verspätung erklären",
+      "lines": [
+        {
+          "de": "Sorry für die Verspätung, mein vorheriges Meeting hat überzogen.",
+          "en": "Sorry I'm late, my previous meeting ran over."
+        },
+        {
+          "de": "Kein Problem. Wir haben gerade erst mit Smalltalk angefangen.",
+          "en": "No worries. We just started with some small talk."
+        },
+        {
+          "de": "Danke. Gibt es etwas, das ich verpasst habe?",
+          "en": "Thanks. Is there anything I missed?"
+        }
+      ]
+    },
+    {
+      "de": "Wie läuft deine Woche bisher? Du wirkst beschäftigt.\nEhrlich gesagt, ziemlich vollgepackt. Wir launchen nächste Woche.\nKlingt stressig. Drücke euch die Daumen für den Launch.",
+      "en": "How is your week going so far? You seem busy.\nHonestly, pretty packed. We're launching next week.\nSounds stressful. Fingers crossed for the launch.",
+      "cat": "meeting_start",
+      "type": "dialogue",
+      "title": "Smalltalk über die Woche",
+      "lines": [
+        {
+          "de": "Wie läuft deine Woche bisher? Du wirkst beschäftigt.",
+          "en": "How is your week going so far? You seem busy."
+        },
+        {
+          "de": "Ehrlich gesagt, ziemlich vollgepackt. Wir launchen nächste Woche.",
+          "en": "Honestly, pretty packed. We're launching next week."
+        },
+        {
+          "de": "Klingt stressig. Drücke euch die Daumen für den Launch.",
+          "en": "Sounds stressful. Fingers crossed for the launch."
+        }
+      ]
+    },
+    {
+      "de": "Lass mich euch ein kurzes Update geben. Wir sind im Plan für Q2.\nDer Umsatz ist 12 Prozent über dem Vorjahr und die Marge stabil.\nNächste Woche starten wir die Marketing-Kampagne für den Sommer.",
+      "en": "Let me give you a quick update. We're on track for Q2.\nRevenue is 12 percent above last year and the margin is stable.\nNext week we'll start the summer marketing campaign.",
+      "cat": "status_update",
+      "type": "dialogue",
+      "title": "Wöchentliches Status-Update",
+      "lines": [
+        {
+          "de": "Lass mich euch ein kurzes Update geben. Wir sind im Plan für Q2.",
+          "en": "Let me give you a quick update. We're on track for Q2."
+        },
+        {
+          "de": "Der Umsatz ist 12 Prozent über dem Vorjahr und die Marge stabil.",
+          "en": "Revenue is 12 percent above last year and the margin is stable."
+        },
+        {
+          "de": "Nächste Woche starten wir die Marketing-Kampagne für den Sommer.",
+          "en": "Next week we'll start the summer marketing campaign."
+        }
+      ]
+    },
+    {
+      "de": "Ich bin gerade auf etwas blockiert und brauche eure Unterstützung.\nDer Feed-Export funktioniert nicht wie erwartet. Channable wirft Fehler.\nKönnen wir das heute Nachmittag gemeinsam debuggen?",
+      "en": "I'm blocked on something right now and need your support.\nThe feed export isn't working as expected. Channable is throwing errors.\nCan we debug this together this afternoon?",
+      "cat": "status_update",
+      "type": "dialogue",
+      "title": "Blocker melden",
+      "lines": [
+        {
+          "de": "Ich bin gerade auf etwas blockiert und brauche eure Unterstützung.",
+          "en": "I'm blocked on something right now and need your support."
+        },
+        {
+          "de": "Der Feed-Export funktioniert nicht wie erwartet. Channable wirft Fehler.",
+          "en": "The feed export isn't working as expected. Channable is throwing errors."
+        },
+        {
+          "de": "Können wir das heute Nachmittag gemeinsam debuggen?",
+          "en": "Can we debug this together this afternoon?"
+        }
+      ]
+    },
+    {
+      "de": "Wir liegen leider hinter dem Plan. Die Deadline wird knapp.\nWas sind die wichtigsten Punkte, die noch offen sind?\nIch schicke dir nach dem Meeting eine detaillierte Liste.",
+      "en": "Unfortunately, we're behind schedule. The deadline will be tight.\nWhat are the most important items that are still open?\nI'll send you a detailed list after the meeting.",
+      "cat": "status_update",
+      "type": "dialogue",
+      "title": "Fortschritt vor Deadline",
+      "lines": [
+        {
+          "de": "Wir liegen leider hinter dem Plan. Die Deadline wird knapp.",
+          "en": "Unfortunately, we're behind schedule. The deadline will be tight."
+        },
+        {
+          "de": "Was sind die wichtigsten Punkte, die noch offen sind?",
+          "en": "What are the most important items that are still open?"
+        },
+        {
+          "de": "Ich schicke dir nach dem Meeting eine detaillierte Liste.",
+          "en": "I'll send you a detailed list after the meeting."
+        }
+      ]
+    },
+    {
+      "de": "Ich habe gute Neuigkeiten. Die Conversion-Rate ist um 18 Prozent gestiegen.\nGroßartig. Was hat den Unterschied gemacht?\nWir haben den Checkout-Prozess vereinfacht und neue Produktbilder ergänzt.",
+      "en": "I have good news. The conversion rate has gone up by 18 percent.\nGreat. What made the difference?\nWe simplified the checkout process and added new product images.",
+      "cat": "status_update",
+      "type": "dialogue",
+      "title": "Erfolg präsentieren",
+      "lines": [
+        {
+          "de": "Ich habe gute Neuigkeiten. Die Conversion-Rate ist um 18 Prozent gestiegen.",
+          "en": "I have good news. The conversion rate has gone up by 18 percent."
+        },
+        {
+          "de": "Großartig. Was hat den Unterschied gemacht?",
+          "en": "Great. What made the difference?"
+        },
+        {
+          "de": "Wir haben den Checkout-Prozess vereinfacht und neue Produktbilder ergänzt.",
+          "en": "We simplified the checkout process and added new product images."
+        }
+      ]
+    },
+    {
+      "de": "Das Quartal lief insgesamt gut. Wir haben unsere Hauptziele übertroffen.\nWas sind die größten Risiken für nächstes Quartal?\nLieferkettenprobleme und steigende Werbekosten. Wir arbeiten an einem Plan B.",
+      "en": "Overall, the quarter went well. We exceeded our main targets.\nWhat are the biggest risks for next quarter?\nSupply chain issues and rising ad costs. We're working on a plan B.",
+      "cat": "status_update",
+      "type": "dialogue",
+      "title": "Quartalsbericht",
+      "lines": [
+        {
+          "de": "Das Quartal lief insgesamt gut. Wir haben unsere Hauptziele übertroffen.",
+          "en": "Overall, the quarter went well. We exceeded our main targets."
+        },
+        {
+          "de": "Was sind die größten Risiken für nächstes Quartal?",
+          "en": "What are the biggest risks for next quarter?"
+        },
+        {
+          "de": "Lieferkettenprobleme und steigende Werbekosten. Wir arbeiten an einem Plan B.",
+          "en": "Supply chain issues and rising ad costs. We're working on a plan B."
+        }
+      ]
+    },
+    {
+      "de": "Wir haben ein Problem mit der Checkout-Funktion. Bestellungen schlagen fehl.\nSeit wann tritt das auf? Habt ihr Logs, die ihr teilen könnt?\nSeit heute Morgen 9 Uhr. Ich schicke dir gleich die Fehlermeldungen.",
+      "en": "We have an issue with the checkout function. Orders are failing.\nSince when is this happening? Do you have logs you can share?\nSince 9 a.m. this morning. I'll send you the error messages right away.",
+      "cat": "problem_solving",
+      "type": "dialogue",
+      "title": "Bug melden",
+      "lines": [
+        {
+          "de": "Wir haben ein Problem mit der Checkout-Funktion. Bestellungen schlagen fehl.",
+          "en": "We have an issue with the checkout function. Orders are failing."
+        },
+        {
+          "de": "Seit wann tritt das auf? Habt ihr Logs, die ihr teilen könnt?",
+          "en": "Since when is this happening? Do you have logs you can share?"
+        },
+        {
+          "de": "Seit heute Morgen 9 Uhr. Ich schicke dir gleich die Fehlermeldungen.",
+          "en": "Since 9 a.m. this morning. I'll send you the error messages right away."
+        }
+      ]
+    },
+    {
+      "de": "Ich glaube, da gibt es ein Missverständnis. Können wir das nochmal durchgehen?\nKlar, woran genau hakt es?\nDu hattest 'nächste Woche' gesagt, ich verstand 'diese Woche'. Was passt für dich?",
+      "en": "I think there's a misunderstanding. Can we go through this again?\nSure, what exactly is the issue?\nYou said 'next week', I understood 'this week'. What works for you?",
+      "cat": "problem_solving",
+      "type": "dialogue",
+      "title": "Missverständnis klären",
+      "lines": [
+        {
+          "de": "Ich glaube, da gibt es ein Missverständnis. Können wir das nochmal durchgehen?",
+          "en": "I think there's a misunderstanding. Can we go through this again?"
+        },
+        {
+          "de": "Klar, woran genau hakt es?",
+          "en": "Sure, what exactly is the issue?"
+        },
+        {
+          "de": "Du hattest 'nächste Woche' gesagt, ich verstand 'diese Woche'. Was passt für dich?",
+          "en": "You said 'next week', I understood 'this week'. What works for you?"
+        }
+      ]
+    },
+    {
+      "de": "Das Thema ist komplexer als gedacht. Ich muss meinen Chef einbeziehen.\nVerstehe ich. Brauchst du noch Infos von uns für die Eskalation?\nEine kurze Zusammenfassung wäre hilfreich. Ich melde mich morgen.",
+      "en": "This issue is more complex than expected. I need to involve my manager.\nI understand. Do you need more info from us for the escalation?\nA brief summary would be helpful. I'll get back to you tomorrow.",
+      "cat": "problem_solving",
+      "type": "dialogue",
+      "title": "Eskalation an Vorgesetzten",
+      "lines": [
+        {
+          "de": "Das Thema ist komplexer als gedacht. Ich muss meinen Chef einbeziehen.",
+          "en": "This issue is more complex than expected. I need to involve my manager."
+        },
+        {
+          "de": "Verstehe ich. Brauchst du noch Infos von uns für die Eskalation?",
+          "en": "I understand. Do you need more info from us for the escalation?"
+        },
+        {
+          "de": "Eine kurze Zusammenfassung wäre hilfreich. Ich melde mich morgen.",
+          "en": "A brief summary would be helpful. I'll get back to you tomorrow."
+        }
+      ]
+    },
+    {
+      "de": "Ich verstehe, dass das frustrierend ist. Es tut mir leid für die Umstände.\nWas können wir tun, um das Problem schnell zu lösen?\nIch brauche bis Donnerstag eine Lösung und eine Entschuldigung schriftlich.",
+      "en": "I understand that's frustrating. I'm sorry for the inconvenience.\nWhat can we do to fix the problem quickly?\nI need a solution by Thursday and a written apology.",
+      "cat": "problem_solving",
+      "type": "dialogue",
+      "title": "Beschwerde annehmen",
+      "lines": [
+        {
+          "de": "Ich verstehe, dass das frustrierend ist. Es tut mir leid für die Umstände.",
+          "en": "I understand that's frustrating. I'm sorry for the inconvenience."
+        },
+        {
+          "de": "Was können wir tun, um das Problem schnell zu lösen?",
+          "en": "What can we do to fix the problem quickly?"
+        },
+        {
+          "de": "Ich brauche bis Donnerstag eine Lösung und eine Entschuldigung schriftlich.",
+          "en": "I need a solution by Thursday and a written apology."
+        }
+      ]
+    },
+    {
+      "de": "Wer ist eigentlich für diesen Bereich zuständig? Ich bin mir unsicher.\nLass mich kurz prüfen. Ich glaube, das fällt in Sarahs Bereich.\nPerfekt, dann kontaktiere ich sie direkt. Kannst du sie cc-en?",
+      "en": "Who is actually responsible for this area? I'm not sure.\nLet me check quickly. I believe that falls into Sarah's area.\nPerfect, I'll contact her directly. Can you cc her?",
+      "cat": "problem_solving",
+      "type": "dialogue",
+      "title": "Verantwortlichkeit klären",
+      "lines": [
+        {
+          "de": "Wer ist eigentlich für diesen Bereich zuständig? Ich bin mir unsicher.",
+          "en": "Who is actually responsible for this area? I'm not sure."
+        },
+        {
+          "de": "Lass mich kurz prüfen. Ich glaube, das fällt in Sarahs Bereich.",
+          "en": "Let me check quickly. I believe that falls into Sarah's area."
+        },
+        {
+          "de": "Perfekt, dann kontaktiere ich sie direkt. Kannst du sie cc-en?",
+          "en": "Perfect, I'll contact her directly. Can you cc her?"
+        }
+      ]
+    },
+    {
+      "de": "Sollen wir einen Folgetermin für nächste Woche aufsetzen?\nGerne. Wann passt es dir am besten?\nDienstag oder Mittwoch Nachmittag wäre ideal. 30 Minuten reichen.",
+      "en": "Should we set up a follow-up meeting for next week?\nSure. When works best for you?\nTuesday or Wednesday afternoon would be ideal. 30 minutes are enough.",
+      "cat": "scheduling",
+      "type": "dialogue",
+      "title": "Folgetermin vereinbaren",
+      "lines": [
+        {
+          "de": "Sollen wir einen Folgetermin für nächste Woche aufsetzen?",
+          "en": "Should we set up a follow-up meeting for next week?"
+        },
+        {
+          "de": "Gerne. Wann passt es dir am besten?",
+          "en": "Sure. When works best for you?"
+        },
+        {
+          "de": "Dienstag oder Mittwoch Nachmittag wäre ideal. 30 Minuten reichen.",
+          "en": "Tuesday or Wednesday afternoon would be ideal. 30 minutes are enough."
+        }
+      ]
+    },
+    {
+      "de": "Ich muss leider unseren Termin morgen verschieben. Tut mir leid.\nKein Problem. Hast du einen anderen Vorschlag?\nWie wäre es mit Freitag um 10 Uhr eurer Zeit?",
+      "en": "I'm afraid I have to reschedule our meeting tomorrow. Sorry about that.\nNo problem. Do you have another suggestion?\nHow about Friday at 10 a.m. your time?",
+      "cat": "scheduling",
+      "type": "dialogue",
+      "title": "Termin verschieben",
+      "lines": [
+        {
+          "de": "Ich muss leider unseren Termin morgen verschieben. Tut mir leid.",
+          "en": "I'm afraid I have to reschedule our meeting tomorrow. Sorry about that."
+        },
+        {
+          "de": "Kein Problem. Hast du einen anderen Vorschlag?",
+          "en": "No problem. Do you have another suggestion?"
+        },
+        {
+          "de": "Wie wäre es mit Freitag um 10 Uhr eurer Zeit?",
+          "en": "How about Friday at 10 a.m. your time?"
+        }
+      ]
+    },
+    {
+      "de": "Wir müssen die Zeitzone berücksichtigen. Ich bin in Mitteleuropa.\nVerstanden. Ich bin an der Ostküste. Sechs Stunden Unterschied.\n15 Uhr meine Zeit wäre 9 Uhr deine. Würde das funktionieren?",
+      "en": "We need to account for the time zone. I'm in Central Europe.\nUnderstood. I'm on the East Coast. Six hours' difference.\n3 p.m. my time would be 9 a.m. your time. Would that work?",
+      "cat": "scheduling",
+      "type": "dialogue",
+      "title": "Zeitzonen abstimmen",
+      "lines": [
+        {
+          "de": "Wir müssen die Zeitzone berücksichtigen. Ich bin in Mitteleuropa.",
+          "en": "We need to account for the time zone. I'm in Central Europe."
+        },
+        {
+          "de": "Verstanden. Ich bin an der Ostküste. Sechs Stunden Unterschied.",
+          "en": "Understood. I'm on the East Coast. Six hours' difference."
+        },
+        {
+          "de": "15 Uhr meine Zeit wäre 9 Uhr deine. Würde das funktionieren?",
+          "en": "3 p.m. my time would be 9 a.m. your time. Would that work?"
+        }
+      ]
+    },
+    {
+      "de": "Ich muss unseren Termin heute leider kurzfristig absagen.\nSchade, aber kein Problem. Ist alles in Ordnung?\nJa, nur ein dringender Notfall. Ich melde mich für einen neuen Termin.",
+      "en": "I have to cancel our meeting today on short notice, unfortunately.\nThat's too bad, but no problem. Is everything okay?\nYes, just an urgent emergency. I'll reach out for a new appointment.",
+      "cat": "scheduling",
+      "type": "dialogue",
+      "title": "Termin absagen",
+      "lines": [
+        {
+          "de": "Ich muss unseren Termin heute leider kurzfristig absagen.",
+          "en": "I have to cancel our meeting today on short notice, unfortunately."
+        },
+        {
+          "de": "Schade, aber kein Problem. Ist alles in Ordnung?",
+          "en": "That's too bad, but no problem. Is everything okay?"
+        },
+        {
+          "de": "Ja, nur ein dringender Notfall. Ich melde mich für einen neuen Termin.",
+          "en": "Yes, just an urgent emergency. I'll reach out for a new appointment."
+        }
+      ]
+    },
+    {
+      "de": "Lass uns die Kalender abgleichen. Ich schicke dir gleich eine Einladung.\nPerfekt. Bitte auch Mark und Lisa ins CC nehmen.\nMache ich. Sollen wir den Termin als verpflichtend markieren?",
+      "en": "Let's sync our calendars. I'll send you an invitation shortly.\nPerfect. Please also cc Mark and Lisa.\nWill do. Should we mark the meeting as mandatory?",
+      "cat": "scheduling",
+      "type": "dialogue",
+      "title": "Kalender abgleichen",
+      "lines": [
+        {
+          "de": "Lass uns die Kalender abgleichen. Ich schicke dir gleich eine Einladung.",
+          "en": "Let's sync our calendars. I'll send you an invitation shortly."
+        },
+        {
+          "de": "Perfekt. Bitte auch Mark und Lisa ins CC nehmen.",
+          "en": "Perfect. Please also cc Mark and Lisa."
+        },
+        {
+          "de": "Mache ich. Sollen wir den Termin als verpflichtend markieren?",
+          "en": "Will do. Should we mark the meeting as mandatory?"
+        }
+      ]
+    },
+    {
+      "de": "Vielen Dank für eure Zeit. Ich gebe heute einen Überblick über unsere Strategie.\nDie Präsentation dauert etwa 20 Minuten. Fragen gerne am Ende.\nWenn etwas unklar ist, könnt ihr mich aber jederzeit unterbrechen.",
+      "en": "Thanks for your time. Today I'll give you an overview of our strategy.\nThe presentation will take about 20 minutes. Questions are welcome at the end.\nIf something is unclear, feel free to interrupt me anytime.",
+      "cat": "presentation",
+      "type": "dialogue",
+      "title": "Präsentation eröffnen",
+      "lines": [
+        {
+          "de": "Vielen Dank für eure Zeit. Ich gebe heute einen Überblick über unsere Strategie.",
+          "en": "Thanks for your time. Today I'll give you an overview of our strategy."
+        },
+        {
+          "de": "Die Präsentation dauert etwa 20 Minuten. Fragen gerne am Ende.",
+          "en": "The presentation will take about 20 minutes. Questions are welcome at the end."
+        },
+        {
+          "de": "Wenn etwas unklar ist, könnt ihr mich aber jederzeit unterbrechen.",
+          "en": "If something is unclear, feel free to interrupt me anytime."
+        }
+      ]
+    },
+    {
+      "de": "Das ist eine gute Frage. Lass mich kurz nachdenken.\nWir haben das genau analysiert und sind zu folgendem Ergebnis gekommen.\nFalls du mehr Details brauchst, schicke ich dir die Zahlen per Mail.",
+      "en": "That's a good question. Let me think for a second.\nWe've analyzed exactly that and came to the following conclusion.\nIf you need more details, I'll send you the numbers by email.",
+      "cat": "presentation",
+      "type": "dialogue",
+      "title": "Auf Frage reagieren",
+      "lines": [
+        {
+          "de": "Das ist eine gute Frage. Lass mich kurz nachdenken.",
+          "en": "That's a good question. Let me think for a second."
+        },
+        {
+          "de": "Wir haben das genau analysiert und sind zu folgendem Ergebnis gekommen.",
+          "en": "We've analyzed exactly that and came to the following conclusion."
+        },
+        {
+          "de": "Falls du mehr Details brauchst, schicke ich dir die Zahlen per Mail.",
+          "en": "If you need more details, I'll send you the numbers by email."
+        }
+      ]
+    },
+    {
+      "de": "Ich verstehe deine Bedenken. Das ist ein berechtigter Punkt.\nKönnen wir das nach der Präsentation im Detail besprechen?\nSehr gerne. Ich möchte das nicht oberflächlich beantworten.",
+      "en": "I understand your concerns. That's a valid point.\nCan we discuss this in detail after the presentation?\nAbsolutely. I don't want to give a superficial answer.",
+      "cat": "presentation",
+      "type": "dialogue",
+      "title": "Auf kritische Frage antworten",
+      "lines": [
+        {
+          "de": "Ich verstehe deine Bedenken. Das ist ein berechtigter Punkt.",
+          "en": "I understand your concerns. That's a valid point."
+        },
+        {
+          "de": "Können wir das nach der Präsentation im Detail besprechen?",
+          "en": "Can we discuss this in detail after the presentation?"
+        },
+        {
+          "de": "Sehr gerne. Ich möchte das nicht oberflächlich beantworten.",
+          "en": "Absolutely. I don't want to give a superficial answer."
+        }
+      ]
+    },
+    {
+      "de": "Das ist ein wichtiger Punkt, aber er führt uns weg vom Thema.\nKönnen wir das parken und am Ende darauf zurückkommen?\nKlar, ich notiere es mir und wir greifen es später auf.",
+      "en": "That's an important point, but it leads us away from the topic.\nCan we park this and come back to it at the end?\nSure, I'll note it down and we'll pick it up later.",
+      "cat": "presentation",
+      "type": "dialogue",
+      "title": "Frage parken",
+      "lines": [
+        {
+          "de": "Das ist ein wichtiger Punkt, aber er führt uns weg vom Thema.",
+          "en": "That's an important point, but it leads us away from the topic."
+        },
+        {
+          "de": "Können wir das parken und am Ende darauf zurückkommen?",
+          "en": "Can we park this and come back to it at the end?"
+        },
+        {
+          "de": "Klar, ich notiere es mir und wir greifen es später auf.",
+          "en": "Sure, I'll note it down and we'll pick it up later."
+        }
+      ]
+    },
+    {
+      "de": "Das wären die wichtigsten Punkte. Gibt es Fragen dazu?\nWie sind die nächsten Schritte? Wann können wir starten?\nIch schicke euch die Folien und ein Briefing bis morgen Vormittag.",
+      "en": "Those would be the main points. Are there any questions?\nWhat are the next steps? When can we get started?\nI'll send you the slides and a briefing by tomorrow morning.",
+      "cat": "presentation",
+      "type": "dialogue",
+      "title": "Präsentation abschließen",
+      "lines": [
+        {
+          "de": "Das wären die wichtigsten Punkte. Gibt es Fragen dazu?",
+          "en": "Those would be the main points. Are there any questions?"
+        },
+        {
+          "de": "Wie sind die nächsten Schritte? Wann können wir starten?",
+          "en": "What are the next steps? When can we get started?"
+        },
+        {
+          "de": "Ich schicke euch die Folien und ein Briefing bis morgen Vormittag.",
+          "en": "I'll send you the slides and a briefing by tomorrow morning."
+        }
+      ]
+    },
+    {
+      "de": "Wir schätzen euer Angebot, aber der Preis ist außerhalb unseres Budgets.\nWelches Budget habt ihr im Kopf? Vielleicht finden wir eine Lösung.\nBei 15 Prozent weniger könnten wir sofort unterschreiben.",
+      "en": "We appreciate your offer, but the price is outside our budget.\nWhat budget do you have in mind? Maybe we can find a solution.\nAt 15 percent less we could sign right away.",
+      "cat": "negotiation",
+      "type": "dialogue",
+      "title": "Preis verhandeln",
+      "lines": [
+        {
+          "de": "Wir schätzen euer Angebot, aber der Preis ist außerhalb unseres Budgets.",
+          "en": "We appreciate your offer, but the price is outside our budget."
+        },
+        {
+          "de": "Welches Budget habt ihr im Kopf? Vielleicht finden wir eine Lösung.",
+          "en": "What budget do you have in mind? Maybe we can find a solution."
+        },
+        {
+          "de": "Bei 15 Prozent weniger könnten wir sofort unterschreiben.",
+          "en": "At 15 percent less we could sign right away."
+        }
+      ]
+    },
+    {
+      "de": "Können wir über die Zahlungsbedingungen sprechen? 30 Tage wären besser.\nDas ist normalerweise nicht unser Standard, aber lass uns darüber reden.\nWenn ihr 30 Tage akzeptiert, können wir das Volumen erhöhen.",
+      "en": "Can we talk about the payment terms? 30 days would work better.\nThat's not usually our standard, but let's discuss it.\nIf you accept 30 days, we can increase the volume.",
+      "cat": "negotiation",
+      "type": "dialogue",
+      "title": "Konditionen anpassen",
+      "lines": [
+        {
+          "de": "Können wir über die Zahlungsbedingungen sprechen? 30 Tage wären besser.",
+          "en": "Can we talk about the payment terms? 30 days would work better."
+        },
+        {
+          "de": "Das ist normalerweise nicht unser Standard, aber lass uns darüber reden.",
+          "en": "That's not usually our standard, but let's discuss it."
+        },
+        {
+          "de": "Wenn ihr 30 Tage akzeptiert, können wir das Volumen erhöhen.",
+          "en": "If you accept 30 days, we can increase the volume."
+        }
+      ]
+    },
+    {
+      "de": "Wir bekommen ein günstigeres Angebot von einem Mitbewerber.\nDas verstehe ich. Was würdest du brauchen, um bei uns zu bleiben?\nEinen Mengenrabatt und schnellere Lieferzeiten als bisher.",
+      "en": "We're getting a cheaper offer from a competitor.\nI understand. What would you need to stay with us?\nA volume discount and faster delivery times than before.",
+      "cat": "negotiation",
+      "type": "dialogue",
+      "title": "Lieferanten-Verhandlung",
+      "lines": [
+        {
+          "de": "Wir bekommen ein günstigeres Angebot von einem Mitbewerber.",
+          "en": "We're getting a cheaper offer from a competitor."
+        },
+        {
+          "de": "Das verstehe ich. Was würdest du brauchen, um bei uns zu bleiben?",
+          "en": "I understand. What would you need to stay with us?"
+        },
+        {
+          "de": "Einen Mengenrabatt und schnellere Lieferzeiten als bisher.",
+          "en": "A volume discount and faster delivery times than before."
+        }
+      ]
+    },
+    {
+      "de": "Lass uns einen Kompromiss finden, der für beide Seiten funktioniert.\nWas wäre für euch das absolute Minimum, damit der Deal Sinn macht?\nTreffen wir uns in der Mitte. 8 Prozent Rabatt bei 12 Monaten Laufzeit.",
+      "en": "Let's find a compromise that works for both sides.\nWhat would be the absolute minimum for the deal to make sense for you?\nLet's meet in the middle. 8 percent discount for a 12-month term.",
+      "cat": "negotiation",
+      "type": "dialogue",
+      "title": "Win-Win finden",
+      "lines": [
+        {
+          "de": "Lass uns einen Kompromiss finden, der für beide Seiten funktioniert.",
+          "en": "Let's find a compromise that works for both sides."
+        },
+        {
+          "de": "Was wäre für euch das absolute Minimum, damit der Deal Sinn macht?",
+          "en": "What would be the absolute minimum for the deal to make sense for you?"
+        },
+        {
+          "de": "Treffen wir uns in der Mitte. 8 Prozent Rabatt bei 12 Monaten Laufzeit.",
+          "en": "Let's meet in the middle. 8 percent discount for a 12-month term."
+        }
+      ]
+    },
+    {
+      "de": "Ich denke, wir haben einen guten Deal. Lass uns das schriftlich festhalten.\nEinverstanden. Ich schicke euch den Vertrag bis Freitag.\nPerfekt. Ich freue mich auf die Zusammenarbeit.",
+      "en": "I think we have a good deal. Let's put this in writing.\nAgreed. I'll send you the contract by Friday.\nPerfect. I'm looking forward to working together.",
+      "cat": "negotiation",
+      "type": "dialogue",
+      "title": "Verhandlung abschließen",
+      "lines": [
+        {
+          "de": "Ich denke, wir haben einen guten Deal. Lass uns das schriftlich festhalten.",
+          "en": "I think we have a good deal. Let's put this in writing."
+        },
+        {
+          "de": "Einverstanden. Ich schicke euch den Vertrag bis Freitag.",
+          "en": "Agreed. I'll send you the contract by Friday."
+        },
+        {
+          "de": "Perfekt. Ich freue mich auf die Zusammenarbeit.",
+          "en": "Perfect. I'm looking forward to working together."
+        }
+      ]
+    },
+    {
+      "de": "Erzähl uns etwas über dich. Was ist dein beruflicher Hintergrund?\nIch arbeite seit fünf Jahren im E-Commerce mit Schwerpunkt Feed-Management.\nAktuell bin ich bei Don Carne und betreue dort den gesamten Online-Shop.",
+      "en": "Tell us something about yourself. What's your professional background?\nI've been working in e-commerce for five years, focused on feed management.\nCurrently I'm at Don Carne, where I manage the entire online shop.",
+      "cat": "interview",
+      "type": "dialogue",
+      "title": "Sich vorstellen im Interview",
+      "lines": [
+        {
+          "de": "Erzähl uns etwas über dich. Was ist dein beruflicher Hintergrund?",
+          "en": "Tell us something about yourself. What's your professional background?"
+        },
+        {
+          "de": "Ich arbeite seit fünf Jahren im E-Commerce mit Schwerpunkt Feed-Management.",
+          "en": "I've been working in e-commerce for five years, focused on feed management."
+        },
+        {
+          "de": "Aktuell bin ich bei Don Carne und betreue dort den gesamten Online-Shop.",
+          "en": "Currently I'm at Don Carne, where I manage the entire online shop."
+        }
+      ]
+    },
+    {
+      "de": "Was sind deine größten Stärken in deiner aktuellen Rolle?\nIch bin sehr datengetrieben und denke immer in Prozessen.\nAußerdem mag ich es, komplexe Probleme in kleine Schritte zu zerlegen.",
+      "en": "What are your biggest strengths in your current role?\nI'm very data-driven and always think in terms of processes.\nI also enjoy breaking complex problems down into small steps.",
+      "cat": "interview",
+      "type": "dialogue",
+      "title": "Stärken nennen",
+      "lines": [
+        {
+          "de": "Was sind deine größten Stärken in deiner aktuellen Rolle?",
+          "en": "What are your biggest strengths in your current role?"
+        },
+        {
+          "de": "Ich bin sehr datengetrieben und denke immer in Prozessen.",
+          "en": "I'm very data-driven and always think in terms of processes."
+        },
+        {
+          "de": "Außerdem mag ich es, komplexe Probleme in kleine Schritte zu zerlegen.",
+          "en": "I also enjoy breaking complex problems down into small steps."
+        }
+      ]
+    },
+    {
+      "de": "Wo siehst du Bereiche, in denen du dich noch verbessern willst?\nIch neige dazu, mich zu sehr in Details zu verlieren. Daran arbeite ich.\nIch versuche bewusst, häufiger das große Bild im Auge zu behalten.",
+      "en": "Where do you see areas where you still want to improve?\nI tend to get lost in details too much. I'm working on that.\nI deliberately try to keep the bigger picture in mind more often.",
+      "cat": "interview",
+      "type": "dialogue",
+      "title": "Über Schwächen sprechen",
+      "lines": [
+        {
+          "de": "Wo siehst du Bereiche, in denen du dich noch verbessern willst?",
+          "en": "Where do you see areas where you still want to improve?"
+        },
+        {
+          "de": "Ich neige dazu, mich zu sehr in Details zu verlieren. Daran arbeite ich.",
+          "en": "I tend to get lost in details too much. I'm working on that."
+        },
+        {
+          "de": "Ich versuche bewusst, häufiger das große Bild im Auge zu behalten.",
+          "en": "I deliberately try to keep the bigger picture in mind more often."
+        }
+      ]
+    },
+    {
+      "de": "Ich hätte gerne mehr Kontext zur Rolle. Wie sieht ein typischer Tag aus?\nSehr abwechslungsreich. Vormittags Calls, nachmittags fokussierte Arbeit.\nKlingt gut für mich. Wie ist das Team strukturiert?",
+      "en": "I'd like more context about the role. What does a typical day look like?\nVery varied. Calls in the morning, focused work in the afternoon.\nSounds good to me. How is the team structured?",
+      "cat": "interview",
+      "type": "dialogue",
+      "title": "Frage zur Firma stellen",
+      "lines": [
+        {
+          "de": "Ich hätte gerne mehr Kontext zur Rolle. Wie sieht ein typischer Tag aus?",
+          "en": "I'd like more context about the role. What does a typical day look like?"
+        },
+        {
+          "de": "Sehr abwechslungsreich. Vormittags Calls, nachmittags fokussierte Arbeit.",
+          "en": "Very varied. Calls in the morning, focused work in the afternoon."
+        },
+        {
+          "de": "Klingt gut für mich. Wie ist das Team strukturiert?",
+          "en": "Sounds good to me. How is the team structured?"
+        }
+      ]
+    },
+    {
+      "de": "Vielen Dank für das Gespräch. Wann darf ich mit einer Rückmeldung rechnen?\nWir melden uns spätestens bis Ende nächster Woche bei dir.\nPerfekt. Falls Fragen aufkommen, gerne jederzeit an mich wenden.",
+      "en": "Thanks for the conversation. When can I expect to hear back?\nWe'll get back to you by the end of next week at the latest.\nPerfect. If any questions come up, feel free to reach out anytime.",
+      "cat": "interview",
+      "type": "dialogue",
+      "title": "Interview abschließen",
+      "lines": [
+        {
+          "de": "Vielen Dank für das Gespräch. Wann darf ich mit einer Rückmeldung rechnen?",
+          "en": "Thanks for the conversation. When can I expect to hear back?"
+        },
+        {
+          "de": "Wir melden uns spätestens bis Ende nächster Woche bei dir.",
+          "en": "We'll get back to you by the end of next week at the latest."
+        },
+        {
+          "de": "Perfekt. Falls Fragen aufkommen, gerne jederzeit an mich wenden.",
+          "en": "Perfect. If any questions come up, feel free to reach out anytime."
+        }
+      ]
     }
   ]
 }

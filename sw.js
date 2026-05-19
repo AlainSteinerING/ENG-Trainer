@@ -1,5 +1,5 @@
 // Service Worker - cached App-Shell, content.json immer aktuell holen
-const CACHE = 'english-trainer-v2';
+const CACHE = 'english-trainer-v3';
 const SHELL = [
   './',
   './index.html',
