@@ -1,0 +1,3718 @@
+{
+  "version": "1.0",
+  "createdAt": "2026-05-19",
+  "categories": {
+    "greeting": {
+      "label": "Begrüßung & Smalltalk",
+      "icon": "ti-hand-stop",
+      "type": "phrase"
+    },
+    "understand": {
+      "label": "Nicht verstanden",
+      "icon": "ti-ear",
+      "type": "phrase"
+    },
+    "thinking": {
+      "label": "Zeit gewinnen",
+      "icon": "ti-bulb",
+      "type": "phrase"
+    },
+    "clarify": {
+      "label": "Nachfragen",
+      "icon": "ti-help-circle",
+      "type": "phrase"
+    },
+    "opinion": {
+      "label": "Position äußern",
+      "icon": "ti-message",
+      "type": "phrase"
+    },
+    "disagree": {
+      "label": "Höflich widersprechen",
+      "icon": "ti-arrow-back",
+      "type": "phrase"
+    },
+    "commit": {
+      "label": "Nicht zusagen",
+      "icon": "ti-pause",
+      "type": "phrase"
+    },
+    "transitions": {
+      "label": "Übergänge",
+      "icon": "ti-arrows-shuffle",
+      "type": "phrase"
+    },
+    "closing": {
+      "label": "Abschluss",
+      "icon": "ti-check",
+      "type": "phrase"
+    },
+    "negotiation": {
+      "label": "Verhandlung",
+      "icon": "ti-arrows-exchange",
+      "type": "phrase"
+    },
+    "project": {
+      "label": "Projekt & Deadlines",
+      "icon": "ti-calendar-event",
+      "type": "phrase"
+    },
+    "numbers": {
+      "label": "Zahlen & Daten",
+      "icon": "ti-chart-bar",
+      "type": "phrase"
+    },
+    "meeting": {
+      "label": "Meeting & Call",
+      "icon": "ti-video",
+      "type": "vocab"
+    },
+    "business": {
+      "label": "Business allgemein",
+      "icon": "ti-briefcase",
+      "type": "vocab"
+    },
+    "money": {
+      "label": "Geld & Zahlen",
+      "icon": "ti-currency-euro",
+      "type": "vocab"
+    },
+    "ecommerce": {
+      "label": "E-Commerce & Marketing",
+      "icon": "ti-shopping-cart",
+      "type": "vocab"
+    },
+    "verbs": {
+      "label": "Verben",
+      "icon": "ti-bolt",
+      "type": "vocab"
+    },
+    "time": {
+      "label": "Zeit & Planung",
+      "icon": "ti-clock",
+      "type": "vocab"
+    },
+    "adjectives": {
+      "label": "Adjektive",
+      "icon": "ti-tag",
+      "type": "vocab"
+    },
+    "connectors": {
+      "label": "Konnektoren",
+      "icon": "ti-link",
+      "type": "vocab"
+    },
+    "tech": {
+      "label": "Technik & Workflow",
+      "icon": "ti-device-laptop",
+      "type": "vocab"
+    },
+    "smalltalk": {
+      "label": "Smalltalk & Persönlich",
+      "icon": "ti-coffee",
+      "type": "vocab"
+    }
+  },
+  "items": [
+    {
+      "de": "Hi zusammen, schön euch zu sehen.",
+      "en": "Hi everyone, good to see you.",
+      "cat": "greeting",
+      "type": "phrase"
+    },
+    {
+      "de": "Danke fürs Organisieren.",
+      "en": "Thanks for setting this up.",
+      "cat": "greeting",
+      "type": "phrase"
+    },
+    {
+      "de": "Können mich alle gut hören?",
+      "en": "Can everyone hear me okay?",
+      "cat": "greeting",
+      "type": "phrase"
+    },
+    {
+      "de": "Wie läuft deine Woche bisher?",
+      "en": "How is your week so far?",
+      "cat": "greeting",
+      "type": "phrase"
+    },
+    {
+      "de": "Schön, dich kennenzulernen.",
+      "en": "Nice to meet you.",
+      "cat": "greeting",
+      "type": "phrase"
+    },
+    {
+      "de": "Lass uns anfangen.",
+      "en": "Let's get started.",
+      "cat": "greeting",
+      "type": "phrase"
+    },
+    {
+      "de": "Guten Morgen zusammen.",
+      "en": "Good morning everyone.",
+      "cat": "greeting",
+      "type": "phrase"
+    },
+    {
+      "de": "Guten Nachmittag.",
+      "en": "Good afternoon.",
+      "cat": "greeting",
+      "type": "phrase"
+    },
+    {
+      "de": "Schön, mit dir wieder zu sprechen.",
+      "en": "Good to speak with you again.",
+      "cat": "greeting",
+      "type": "phrase"
+    },
+    {
+      "de": "Wie war dein Wochenende?",
+      "en": "How was your weekend?",
+      "cat": "greeting",
+      "type": "phrase"
+    },
+    {
+      "de": "Wie geht es dir?",
+      "en": "How are you doing?",
+      "cat": "greeting",
+      "type": "phrase"
+    },
+    {
+      "de": "Mir geht es gut, danke der Nachfrage.",
+      "en": "I'm doing well, thanks for asking.",
+      "cat": "greeting",
+      "type": "phrase"
+    },
+    {
+      "de": "Und selbst?",
+      "en": "How about yourself?",
+      "cat": "greeting",
+      "type": "phrase"
+    },
+    {
+      "de": "Lange nicht gesehen.",
+      "en": "Long time no see.",
+      "cat": "greeting",
+      "type": "phrase"
+    },
+    {
+      "de": "Es ist schon eine Weile her.",
+      "en": "It's been a while.",
+      "cat": "greeting",
+      "type": "phrase"
+    },
+    {
+      "de": "Danke, dass du dir Zeit nimmst.",
+      "en": "Thanks for taking the time.",
+      "cat": "greeting",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich freue mich auf unser Gespräch.",
+      "en": "I'm looking forward to our chat.",
+      "cat": "greeting",
+      "type": "phrase"
+    },
+    {
+      "de": "Sollen wir mit einer kurzen Vorstellungsrunde anfangen?",
+      "en": "Shall we start with a quick round of introductions?",
+      "cat": "greeting",
+      "type": "phrase"
+    },
+    {
+      "de": "Lass mich mich kurz vorstellen.",
+      "en": "Let me briefly introduce myself.",
+      "cat": "greeting",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich bin Sergej von Don Carne.",
+      "en": "I'm Sergej from Don Carne.",
+      "cat": "greeting",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich arbeite im E-Commerce-Team.",
+      "en": "I work in the e-commerce team.",
+      "cat": "greeting",
+      "type": "phrase"
+    },
+    {
+      "de": "Wer ist heute alles dabei?",
+      "en": "Who do we have on the call today?",
+      "cat": "greeting",
+      "type": "phrase"
+    },
+    {
+      "de": "Hat irgendwer noch Probleme mit dem Ton?",
+      "en": "Is anyone still having audio issues?",
+      "cat": "greeting",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich höre dich laut und deutlich.",
+      "en": "I can hear you loud and clear.",
+      "cat": "greeting",
+      "type": "phrase"
+    },
+    {
+      "de": "Lass mich kurz mein Mikro stummschalten.",
+      "en": "Let me mute myself for a second.",
+      "cat": "greeting",
+      "type": "phrase"
+    },
+    {
+      "de": "Tut mir leid für die Verspätung.",
+      "en": "Sorry I'm a bit late.",
+      "cat": "greeting",
+      "type": "phrase"
+    },
+    {
+      "de": "Danke fürs Warten.",
+      "en": "Thanks for waiting.",
+      "cat": "greeting",
+      "type": "phrase"
+    },
+    {
+      "de": "Lass uns auf die anderen warten.",
+      "en": "Let's wait for the others to join.",
+      "cat": "greeting",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich glaube, wir sind vollzählig.",
+      "en": "I think we're all here.",
+      "cat": "greeting",
+      "type": "phrase"
+    },
+    {
+      "de": "Schön, ein bekanntes Gesicht zu sehen.",
+      "en": "Good to see a familiar face.",
+      "cat": "greeting",
+      "type": "phrase"
+    },
+    {
+      "de": "Entschuldigung, könntest du das wiederholen?",
+      "en": "Sorry, could you repeat that?",
+      "cat": "understand",
+      "type": "phrase"
+    },
+    {
+      "de": "Das habe ich nicht mitbekommen, sorry.",
+      "en": "I didn't catch that, sorry.",
+      "cat": "understand",
+      "type": "phrase"
+    },
+    {
+      "de": "Kannst du das nochmal sagen?",
+      "en": "Can you say that one more time?",
+      "cat": "understand",
+      "type": "phrase"
+    },
+    {
+      "de": "Sorry, meine Verbindung war kurz schlecht.",
+      "en": "Sorry, my connection was bad for a second.",
+      "cat": "understand",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich bin dir nicht ganz gefolgt.",
+      "en": "I didn't quite follow you.",
+      "cat": "understand",
+      "type": "phrase"
+    },
+    {
+      "de": "Könntest du etwas langsamer sprechen?",
+      "en": "Could you speak a bit slower, please?",
+      "cat": "understand",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich verstehe dich nicht ganz.",
+      "en": "I'm not quite following you.",
+      "cat": "understand",
+      "type": "phrase"
+    },
+    {
+      "de": "Das ist mir entgangen.",
+      "en": "I missed that.",
+      "cat": "understand",
+      "type": "phrase"
+    },
+    {
+      "de": "Was hast du gerade gesagt?",
+      "en": "What did you just say?",
+      "cat": "understand",
+      "type": "phrase"
+    },
+    {
+      "de": "Könntest du das anders erklären?",
+      "en": "Could you put that another way?",
+      "cat": "understand",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich verstehe das Wort nicht.",
+      "en": "I'm not familiar with that word.",
+      "cat": "understand",
+      "type": "phrase"
+    },
+    {
+      "de": "Was bedeutet das?",
+      "en": "What does that mean?",
+      "cat": "understand",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich glaube, mein Audio hat ausgesetzt.",
+      "en": "I think my audio cut out.",
+      "cat": "understand",
+      "type": "phrase"
+    },
+    {
+      "de": "Du bist abgehackt.",
+      "en": "You're breaking up.",
+      "cat": "understand",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich kann dich kaum verstehen.",
+      "en": "I can barely understand you.",
+      "cat": "understand",
+      "type": "phrase"
+    },
+    {
+      "de": "Kannst du näher ans Mikro?",
+      "en": "Can you get closer to the mic?",
+      "cat": "understand",
+      "type": "phrase"
+    },
+    {
+      "de": "Es gibt ein Echo.",
+      "en": "There's an echo.",
+      "cat": "understand",
+      "type": "phrase"
+    },
+    {
+      "de": "Lass mich kurz die Kopfhörer wechseln.",
+      "en": "Let me switch headphones quickly.",
+      "cat": "understand",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich verbinde mich neu, einen Moment.",
+      "en": "I'll reconnect, one moment.",
+      "cat": "understand",
+      "type": "phrase"
+    },
+    {
+      "de": "Habe ich das richtig gehört?",
+      "en": "Did I hear that correctly?",
+      "cat": "understand",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich bin nicht sicher, ob ich das verstanden habe.",
+      "en": "I'm not sure I understood that.",
+      "cat": "understand",
+      "type": "phrase"
+    },
+    {
+      "de": "Könntest du das genauer ausführen?",
+      "en": "Could you elaborate on that?",
+      "cat": "understand",
+      "type": "phrase"
+    },
+    {
+      "de": "Was meinst du mit X?",
+      "en": "What do you mean by X?",
+      "cat": "understand",
+      "type": "phrase"
+    },
+    {
+      "de": "Sorry, mein Englisch ist nicht perfekt.",
+      "en": "Sorry, my English isn't perfect.",
+      "cat": "understand",
+      "type": "phrase"
+    },
+    {
+      "de": "Können wir das aufschreiben, damit ich es nachschauen kann?",
+      "en": "Can we write that down so I can look it up?",
+      "cat": "understand",
+      "type": "phrase"
+    },
+    {
+      "de": "Lass mich kurz nachdenken.",
+      "en": "Let me think for a moment.",
+      "cat": "thinking",
+      "type": "phrase"
+    },
+    {
+      "de": "Gib mir eine Sekunde, bitte.",
+      "en": "Give me one second, please.",
+      "cat": "thinking",
+      "type": "phrase"
+    },
+    {
+      "de": "Lass mich das auf meiner Seite prüfen.",
+      "en": "Let me check that on my side.",
+      "cat": "thinking",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich möchte später darauf zurückkommen.",
+      "en": "I want to come back to that later.",
+      "cat": "thinking",
+      "type": "phrase"
+    },
+    {
+      "de": "Das ist eine gute Frage.",
+      "en": "That is a good question.",
+      "cat": "thinking",
+      "type": "phrase"
+    },
+    {
+      "de": "Lass mich kurz darüber nachdenken.",
+      "en": "Let me think about this for a second.",
+      "cat": "thinking",
+      "type": "phrase"
+    },
+    {
+      "de": "Einen Moment, ich sortiere meine Gedanken.",
+      "en": "One moment, I'm gathering my thoughts.",
+      "cat": "thinking",
+      "type": "phrase"
+    },
+    {
+      "de": "Das ist ein interessanter Punkt.",
+      "en": "That's an interesting point.",
+      "cat": "thinking",
+      "type": "phrase"
+    },
+    {
+      "de": "Lass mich darüber nachdenken, wie ich das ausdrücke.",
+      "en": "Let me think about how to phrase this.",
+      "cat": "thinking",
+      "type": "phrase"
+    },
+    {
+      "de": "Wenn du mir kurz Zeit gibst...",
+      "en": "If you give me a moment...",
+      "cat": "thinking",
+      "type": "phrase"
+    },
+    {
+      "de": "Bevor ich antworte, lass mich kurz prüfen.",
+      "en": "Before I answer, let me check.",
+      "cat": "thinking",
+      "type": "phrase"
+    },
+    {
+      "de": "Das muss ich erst auf mich wirken lassen.",
+      "en": "I need to let that sink in first.",
+      "cat": "thinking",
+      "type": "phrase"
+    },
+    {
+      "de": "Lass mich kurz die Notizen durchgehen.",
+      "en": "Let me quickly go through my notes.",
+      "cat": "thinking",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich öffne kurz das Dokument.",
+      "en": "I'm opening the document quickly.",
+      "cat": "thinking",
+      "type": "phrase"
+    },
+    {
+      "de": "Einen kurzen Moment, ich suche die Info.",
+      "en": "One moment, I'm looking up the info.",
+      "cat": "thinking",
+      "type": "phrase"
+    },
+    {
+      "de": "Das ist eine wichtige Frage, lass mich überlegen.",
+      "en": "That's an important question, let me think.",
+      "cat": "thinking",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich muss das im Kopf nochmal durchgehen.",
+      "en": "I need to run that through my head again.",
+      "cat": "thinking",
+      "type": "phrase"
+    },
+    {
+      "de": "Lass mich die Zahlen kurz prüfen.",
+      "en": "Let me check the numbers quickly.",
+      "cat": "thinking",
+      "type": "phrase"
+    },
+    {
+      "de": "Gute Frage, da muss ich kurz überlegen.",
+      "en": "Good question, I need to think about that.",
+      "cat": "thinking",
+      "type": "phrase"
+    },
+    {
+      "de": "Lass mich das mental durchspielen.",
+      "en": "Let me walk through this mentally.",
+      "cat": "thinking",
+      "type": "phrase"
+    },
+    {
+      "de": "Eine Sekunde, ich öffne die Datei.",
+      "en": "One sec, I'm opening the file.",
+      "cat": "thinking",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich brauche noch etwas Zeit dafür.",
+      "en": "I need a bit more time on this.",
+      "cat": "thinking",
+      "type": "phrase"
+    },
+    {
+      "de": "Das ist nicht so einfach zu beantworten.",
+      "en": "That's not so easy to answer.",
+      "cat": "thinking",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich muss ehrlich sein, ich bin gerade nicht sicher.",
+      "en": "To be honest, I'm not sure right now.",
+      "cat": "thinking",
+      "type": "phrase"
+    },
+    {
+      "de": "Lass mich das kurz überschlagen.",
+      "en": "Let me do a quick estimate.",
+      "cat": "thinking",
+      "type": "phrase"
+    },
+    {
+      "de": "Kannst du mich da Schritt für Schritt durchführen?",
+      "en": "Can you walk me through that?",
+      "cat": "clarify",
+      "type": "phrase"
+    },
+    {
+      "de": "Was meinst du genau?",
+      "en": "What do you mean exactly?",
+      "cat": "clarify",
+      "type": "phrase"
+    },
+    {
+      "de": "Nur um sicherzugehen, dass ich es richtig verstehe...",
+      "en": "Just to make sure I understand correctly...",
+      "cat": "clarify",
+      "type": "phrase"
+    },
+    {
+      "de": "Du sagst also, dass... ist das richtig?",
+      "en": "So you are saying that... is that right?",
+      "cat": "clarify",
+      "type": "phrase"
+    },
+    {
+      "de": "Könntest du ein Beispiel geben?",
+      "en": "Could you give me an example?",
+      "cat": "clarify",
+      "type": "phrase"
+    },
+    {
+      "de": "Wenn ich dich richtig verstehe...",
+      "en": "If I understand you correctly...",
+      "cat": "clarify",
+      "type": "phrase"
+    },
+    {
+      "de": "Könntest du das etwas konkreter machen?",
+      "en": "Could you be more specific?",
+      "cat": "clarify",
+      "type": "phrase"
+    },
+    {
+      "de": "Was ist der Hintergrund dafür?",
+      "en": "What's the background on that?",
+      "cat": "clarify",
+      "type": "phrase"
+    },
+    {
+      "de": "Wie meinst du das genau?",
+      "en": "How exactly do you mean that?",
+      "cat": "clarify",
+      "type": "phrase"
+    },
+    {
+      "de": "Kannst du mir mehr Kontext geben?",
+      "en": "Can you give me more context?",
+      "cat": "clarify",
+      "type": "phrase"
+    },
+    {
+      "de": "Was wäre der Worst Case?",
+      "en": "What would be the worst case?",
+      "cat": "clarify",
+      "type": "phrase"
+    },
+    {
+      "de": "Was ist die Deadline?",
+      "en": "What's the deadline?",
+      "cat": "clarify",
+      "type": "phrase"
+    },
+    {
+      "de": "Wer ist verantwortlich?",
+      "en": "Who is responsible?",
+      "cat": "clarify",
+      "type": "phrase"
+    },
+    {
+      "de": "Welches Budget reden wir hier?",
+      "en": "What budget are we talking about?",
+      "cat": "clarify",
+      "type": "phrase"
+    },
+    {
+      "de": "Habe ich das richtig zusammengefasst?",
+      "en": "Did I summarize that correctly?",
+      "cat": "clarify",
+      "type": "phrase"
+    },
+    {
+      "de": "Heißt das, dass...?",
+      "en": "Does that mean that...?",
+      "cat": "clarify",
+      "type": "phrase"
+    },
+    {
+      "de": "Wie ist die Priorität?",
+      "en": "What's the priority?",
+      "cat": "clarify",
+      "type": "phrase"
+    },
+    {
+      "de": "Was sind die Risiken?",
+      "en": "What are the risks?",
+      "cat": "clarify",
+      "type": "phrase"
+    },
+    {
+      "de": "Können wir die Anforderungen nochmal durchgehen?",
+      "en": "Can we go through the requirements again?",
+      "cat": "clarify",
+      "type": "phrase"
+    },
+    {
+      "de": "Was erwartest du konkret von mir?",
+      "en": "What do you specifically expect from me?",
+      "cat": "clarify",
+      "type": "phrase"
+    },
+    {
+      "de": "Bezogen auf welchen Zeitraum?",
+      "en": "Referring to which time frame?",
+      "cat": "clarify",
+      "type": "phrase"
+    },
+    {
+      "de": "Sprechen wir vom selben Projekt?",
+      "en": "Are we talking about the same project?",
+      "cat": "clarify",
+      "type": "phrase"
+    },
+    {
+      "de": "Bevor wir weitermachen, kurze Frage.",
+      "en": "Before we continue, a quick question.",
+      "cat": "clarify",
+      "type": "phrase"
+    },
+    {
+      "de": "Was meinst du mit dem Begriff X?",
+      "en": "What do you mean by the term X?",
+      "cat": "clarify",
+      "type": "phrase"
+    },
+    {
+      "de": "Können wir das definieren?",
+      "en": "Can we define that?",
+      "cat": "clarify",
+      "type": "phrase"
+    },
+    {
+      "de": "Von meiner Seite aus...",
+      "en": "From my side...",
+      "cat": "opinion",
+      "type": "phrase"
+    },
+    {
+      "de": "Aus unseren Daten...",
+      "en": "From our data...",
+      "cat": "opinion",
+      "type": "phrase"
+    },
+    {
+      "de": "Meine Sicht darauf ist...",
+      "en": "My take on this is...",
+      "cat": "opinion",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich sehe das etwas anders.",
+      "en": "I see this a bit differently.",
+      "cat": "opinion",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich möchte hier etwas hinzufügen.",
+      "en": "I would like to add something here.",
+      "cat": "opinion",
+      "type": "phrase"
+    },
+    {
+      "de": "Aus meiner Erfahrung...",
+      "en": "From my experience...",
+      "cat": "opinion",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich denke, wir sollten...",
+      "en": "I think we should...",
+      "cat": "opinion",
+      "type": "phrase"
+    },
+    {
+      "de": "Meiner Meinung nach...",
+      "en": "In my opinion...",
+      "cat": "opinion",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich bin der Ansicht, dass...",
+      "en": "I'm of the view that...",
+      "cat": "opinion",
+      "type": "phrase"
+    },
+    {
+      "de": "Wenn ich das so sagen darf...",
+      "en": "If I may say so...",
+      "cat": "opinion",
+      "type": "phrase"
+    },
+    {
+      "de": "Aus unserer Perspektive...",
+      "en": "From our perspective...",
+      "cat": "opinion",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich würde gerne kurz etwas dazu sagen.",
+      "en": "I'd like to briefly add something.",
+      "cat": "opinion",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich möchte das gerne unterstreichen.",
+      "en": "I'd like to emphasize this.",
+      "cat": "opinion",
+      "type": "phrase"
+    },
+    {
+      "de": "Mein Vorschlag wäre...",
+      "en": "My suggestion would be...",
+      "cat": "opinion",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich glaube, das ist der richtige Weg.",
+      "en": "I believe this is the right way.",
+      "cat": "opinion",
+      "type": "phrase"
+    },
+    {
+      "de": "Aus geschäftlicher Sicht...",
+      "en": "From a business perspective...",
+      "cat": "opinion",
+      "type": "phrase"
+    },
+    {
+      "de": "Lass mich kurz meine Sicht teilen.",
+      "en": "Let me share my view briefly.",
+      "cat": "opinion",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich bin überzeugt, dass...",
+      "en": "I'm convinced that...",
+      "cat": "opinion",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich sehe großes Potenzial darin.",
+      "en": "I see great potential in this.",
+      "cat": "opinion",
+      "type": "phrase"
+    },
+    {
+      "de": "Das ist auch unsere Erfahrung.",
+      "en": "That's our experience as well.",
+      "cat": "opinion",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich kann das nur bestätigen.",
+      "en": "I can only confirm that.",
+      "cat": "opinion",
+      "type": "phrase"
+    },
+    {
+      "de": "Da stimme ich voll zu.",
+      "en": "I fully agree with that.",
+      "cat": "opinion",
+      "type": "phrase"
+    },
+    {
+      "de": "Das deckt sich mit meiner Sicht.",
+      "en": "That aligns with my view.",
+      "cat": "opinion",
+      "type": "phrase"
+    },
+    {
+      "de": "Genau das wollte ich sagen.",
+      "en": "That's exactly what I wanted to say.",
+      "cat": "opinion",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich bin da etwas zwiegespalten.",
+      "en": "I'm a bit torn on that.",
+      "cat": "opinion",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich bin mir nicht sicher, ob ich zustimme.",
+      "en": "I am not sure I agree.",
+      "cat": "disagree",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich verstehe deinen Punkt, aber...",
+      "en": "I see your point, but...",
+      "cat": "disagree",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich habe einige Bedenken dazu.",
+      "en": "I have some concerns about this.",
+      "cat": "disagree",
+      "type": "phrase"
+    },
+    {
+      "de": "Können wir das aus einem anderen Blickwinkel betrachten?",
+      "en": "Can we look at this from a different angle?",
+      "cat": "disagree",
+      "type": "phrase"
+    },
+    {
+      "de": "Da bin ich anderer Meinung.",
+      "en": "I would disagree on that.",
+      "cat": "disagree",
+      "type": "phrase"
+    },
+    {
+      "de": "Das sehe ich kritisch.",
+      "en": "I have my doubts about that.",
+      "cat": "disagree",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich respektiere deine Sicht, aber...",
+      "en": "I respect your view, but...",
+      "cat": "disagree",
+      "type": "phrase"
+    },
+    {
+      "de": "Mit allem Respekt, ich bin anderer Meinung.",
+      "en": "With all due respect, I disagree.",
+      "cat": "disagree",
+      "type": "phrase"
+    },
+    {
+      "de": "Da muss ich widersprechen.",
+      "en": "I have to push back on that.",
+      "cat": "disagree",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich bin nicht überzeugt.",
+      "en": "I'm not convinced.",
+      "cat": "disagree",
+      "type": "phrase"
+    },
+    {
+      "de": "Das halte ich für riskant.",
+      "en": "I think that's risky.",
+      "cat": "disagree",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich sehe da Probleme.",
+      "en": "I see issues with that.",
+      "cat": "disagree",
+      "type": "phrase"
+    },
+    {
+      "de": "Das funktioniert in unserem Markt nicht.",
+      "en": "That doesn't work in our market.",
+      "cat": "disagree",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich bin skeptisch.",
+      "en": "I'm skeptical.",
+      "cat": "disagree",
+      "type": "phrase"
+    },
+    {
+      "de": "Hast du das nochmal überprüft?",
+      "en": "Did you double-check that?",
+      "cat": "disagree",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich denke, das ist zu optimistisch.",
+      "en": "I think that's too optimistic.",
+      "cat": "disagree",
+      "type": "phrase"
+    },
+    {
+      "de": "Bist du dir da sicher?",
+      "en": "Are you sure about that?",
+      "cat": "disagree",
+      "type": "phrase"
+    },
+    {
+      "de": "Lass uns das nochmal hinterfragen.",
+      "en": "Let's question that again.",
+      "cat": "disagree",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich glaube, da gibt es Alternativen.",
+      "en": "I think there are alternatives.",
+      "cat": "disagree",
+      "type": "phrase"
+    },
+    {
+      "de": "Das ist nicht ganz richtig.",
+      "en": "That's not entirely correct.",
+      "cat": "disagree",
+      "type": "phrase"
+    },
+    {
+      "de": "Lass mich da kurz reingehen.",
+      "en": "Let me jump in there for a second.",
+      "cat": "disagree",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich sehe das anders, lass mich erklären.",
+      "en": "I see it differently, let me explain.",
+      "cat": "disagree",
+      "type": "phrase"
+    },
+    {
+      "de": "Wäre es nicht besser, wenn...?",
+      "en": "Wouldn't it be better if...?",
+      "cat": "disagree",
+      "type": "phrase"
+    },
+    {
+      "de": "Das ist nicht meine Erfahrung.",
+      "en": "That hasn't been my experience.",
+      "cat": "disagree",
+      "type": "phrase"
+    },
+    {
+      "de": "Können wir das nochmal durchdenken?",
+      "en": "Can we rethink this?",
+      "cat": "disagree",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich muss das erst mit meinem Team abstimmen.",
+      "en": "I need to check this with my team first.",
+      "cat": "commit",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich bin heute nicht bereit, mich darauf festzulegen.",
+      "en": "I am not ready to commit on this today.",
+      "cat": "commit",
+      "type": "phrase"
+    },
+    {
+      "de": "Lass mich darüber nachdenken und auf dich zurückkommen.",
+      "en": "Let me think about this and come back to you.",
+      "cat": "commit",
+      "type": "phrase"
+    },
+    {
+      "de": "Können wir das parken und nochmal aufgreifen?",
+      "en": "Can we park this and follow up?",
+      "cat": "commit",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich brauche etwas mehr Kontext, bevor ich entscheide.",
+      "en": "I need a bit more context before I decide.",
+      "cat": "commit",
+      "type": "phrase"
+    },
+    {
+      "de": "Lass mich das mit meinem Chef besprechen.",
+      "en": "Let me discuss this with my manager.",
+      "cat": "commit",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich will hier nichts überstürzen.",
+      "en": "I don't want to rush this.",
+      "cat": "commit",
+      "type": "phrase"
+    },
+    {
+      "de": "Lass uns das nächste Woche entscheiden.",
+      "en": "Let's decide on this next week.",
+      "cat": "commit",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich brauche noch ein paar Tage.",
+      "en": "I need a few more days.",
+      "cat": "commit",
+      "type": "phrase"
+    },
+    {
+      "de": "Bevor ich zusage, brauche ich mehr Infos.",
+      "en": "Before I commit, I need more information.",
+      "cat": "commit",
+      "type": "phrase"
+    },
+    {
+      "de": "Das ist eine größere Entscheidung.",
+      "en": "That's a bigger decision.",
+      "cat": "commit",
+      "type": "phrase"
+    },
+    {
+      "de": "Können wir einen Folgetermin vereinbaren?",
+      "en": "Can we schedule a follow-up?",
+      "cat": "commit",
+      "type": "phrase"
+    },
+    {
+      "de": "Lass mich das offline klären.",
+      "en": "Let me handle this offline.",
+      "cat": "commit",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich melde mich nochmal dazu.",
+      "en": "I'll get back to you on that.",
+      "cat": "commit",
+      "type": "phrase"
+    },
+    {
+      "de": "Lass mich das prüfen und ich melde mich morgen.",
+      "en": "Let me check and I'll get back to you tomorrow.",
+      "cat": "commit",
+      "type": "phrase"
+    },
+    {
+      "de": "Das kann ich heute nicht entscheiden.",
+      "en": "I can't decide that today.",
+      "cat": "commit",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich brauche das Go von meinem Vorgesetzten.",
+      "en": "I need approval from my supervisor.",
+      "cat": "commit",
+      "type": "phrase"
+    },
+    {
+      "de": "Lass uns das schriftlich festhalten.",
+      "en": "Let's put that in writing.",
+      "cat": "commit",
+      "type": "phrase"
+    },
+    {
+      "de": "Bevor wir das finalisieren, eine Frage.",
+      "en": "Before we finalize, one question.",
+      "cat": "commit",
+      "type": "phrase"
+    },
+    {
+      "de": "Können wir das als To-Do mitnehmen?",
+      "en": "Can we take that as an action item?",
+      "cat": "commit",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich brauche Zeit, das intern zu prüfen.",
+      "en": "I need time to check this internally.",
+      "cat": "commit",
+      "type": "phrase"
+    },
+    {
+      "de": "Können wir nächste Woche darüber sprechen?",
+      "en": "Can we talk about this next week?",
+      "cat": "commit",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich möchte das nicht aus dem Bauch entscheiden.",
+      "en": "I don't want to decide this on a gut feeling.",
+      "cat": "commit",
+      "type": "phrase"
+    },
+    {
+      "de": "Lass mich das mit den Zahlen abgleichen.",
+      "en": "Let me align this with the numbers.",
+      "cat": "commit",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich will sicher gehen, bevor ich zusage.",
+      "en": "I want to be sure before I commit.",
+      "cat": "commit",
+      "type": "phrase"
+    },
+    {
+      "de": "Weiter zum nächsten Punkt.",
+      "en": "Moving on to the next point.",
+      "cat": "transitions",
+      "type": "phrase"
+    },
+    {
+      "de": "Um auf das zurückzukommen, was du vorhin gesagt hast...",
+      "en": "Coming back to what you said earlier...",
+      "cat": "transitions",
+      "type": "phrase"
+    },
+    {
+      "de": "Bevor wir weitergehen, habe ich noch eine Frage.",
+      "en": "Before we move on, I have one more question.",
+      "cat": "transitions",
+      "type": "phrase"
+    },
+    {
+      "de": "Lass uns zum Hauptthema kommen.",
+      "en": "Let's get to the main point.",
+      "cat": "transitions",
+      "type": "phrase"
+    },
+    {
+      "de": "Apropos...",
+      "en": "Speaking of which...",
+      "cat": "transitions",
+      "type": "phrase"
+    },
+    {
+      "de": "Das bringt mich zum nächsten Thema.",
+      "en": "That brings me to the next topic.",
+      "cat": "transitions",
+      "type": "phrase"
+    },
+    {
+      "de": "Lass uns kurz das Thema wechseln.",
+      "en": "Let's change topics for a moment.",
+      "cat": "transitions",
+      "type": "phrase"
+    },
+    {
+      "de": "Wenn wir das geklärt haben, dann...",
+      "en": "Once we've sorted that, then...",
+      "cat": "transitions",
+      "type": "phrase"
+    },
+    {
+      "de": "Bleiben wir kurz bei diesem Punkt.",
+      "en": "Let's stay on this point for a moment.",
+      "cat": "transitions",
+      "type": "phrase"
+    },
+    {
+      "de": "Können wir kurz auf X zurückkommen?",
+      "en": "Can we briefly come back to X?",
+      "cat": "transitions",
+      "type": "phrase"
+    },
+    {
+      "de": "In dem Zusammenhang...",
+      "en": "In that context...",
+      "cat": "transitions",
+      "type": "phrase"
+    },
+    {
+      "de": "Das hängt mit unserem Punkt davor zusammen.",
+      "en": "That ties in with our earlier point.",
+      "cat": "transitions",
+      "type": "phrase"
+    },
+    {
+      "de": "Lass uns auf der Agenda weitermachen.",
+      "en": "Let's continue with the agenda.",
+      "cat": "transitions",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich denke, wir können das jetzt abhaken.",
+      "en": "I think we can tick that off now.",
+      "cat": "transitions",
+      "type": "phrase"
+    },
+    {
+      "de": "Lass uns zum Kernpunkt kommen.",
+      "en": "Let's get to the core point.",
+      "cat": "transitions",
+      "type": "phrase"
+    },
+    {
+      "de": "Bevor ich es vergesse...",
+      "en": "Before I forget...",
+      "cat": "transitions",
+      "type": "phrase"
+    },
+    {
+      "de": "Übrigens...",
+      "en": "By the way...",
+      "cat": "transitions",
+      "type": "phrase"
+    },
+    {
+      "de": "Wo waren wir stehen geblieben?",
+      "en": "Where did we leave off?",
+      "cat": "transitions",
+      "type": "phrase"
+    },
+    {
+      "de": "Lass uns nochmal aufnehmen, wo wir aufgehört haben.",
+      "en": "Let's pick up where we left off.",
+      "cat": "transitions",
+      "type": "phrase"
+    },
+    {
+      "de": "Eine letzte Sache zu dem Thema.",
+      "en": "One last thing on this topic.",
+      "cat": "transitions",
+      "type": "phrase"
+    },
+    {
+      "de": "Also zusammengefasst...",
+      "en": "So to summarize...",
+      "cat": "closing",
+      "type": "phrase"
+    },
+    {
+      "de": "Lass mich das kurz aufschreiben.",
+      "en": "Let me write this down quickly.",
+      "cat": "closing",
+      "type": "phrase"
+    },
+    {
+      "de": "Was sind die nächsten Schritte?",
+      "en": "What are the next steps?",
+      "cat": "closing",
+      "type": "phrase"
+    },
+    {
+      "de": "Wer übernimmt diesen Action Item?",
+      "en": "Who owns this action item?",
+      "cat": "closing",
+      "type": "phrase"
+    },
+    {
+      "de": "Danke euch, das war hilfreich.",
+      "en": "Thanks everyone, this was helpful.",
+      "cat": "closing",
+      "type": "phrase"
+    },
+    {
+      "de": "Lass uns einen Folgetermin vereinbaren.",
+      "en": "Let's set up a follow-up meeting.",
+      "cat": "closing",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich schicke euch eine Zusammenfassung per E-Mail.",
+      "en": "I'll send a summary via email.",
+      "cat": "closing",
+      "type": "phrase"
+    },
+    {
+      "de": "Habe ich etwas vergessen?",
+      "en": "Did I forget anything?",
+      "cat": "closing",
+      "type": "phrase"
+    },
+    {
+      "de": "Gibt es noch offene Fragen?",
+      "en": "Are there any open questions?",
+      "cat": "closing",
+      "type": "phrase"
+    },
+    {
+      "de": "Soweit so gut?",
+      "en": "Are we good so far?",
+      "cat": "closing",
+      "type": "phrase"
+    },
+    {
+      "de": "Sind wir uns einig?",
+      "en": "Are we on the same page?",
+      "cat": "closing",
+      "type": "phrase"
+    },
+    {
+      "de": "Lass uns die Ergebnisse festhalten.",
+      "en": "Let's capture the outcomes.",
+      "cat": "closing",
+      "type": "phrase"
+    },
+    {
+      "de": "Wer notiert das?",
+      "en": "Who's taking notes?",
+      "cat": "closing",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich fasse die Action Items zusammen.",
+      "en": "I'll summarize the action items.",
+      "cat": "closing",
+      "type": "phrase"
+    },
+    {
+      "de": "Bis wann brauchst du das?",
+      "en": "By when do you need this?",
+      "cat": "closing",
+      "type": "phrase"
+    },
+    {
+      "de": "Lass uns eine Deadline setzen.",
+      "en": "Let's set a deadline.",
+      "cat": "closing",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich kümmere mich darum.",
+      "en": "I'll take care of it.",
+      "cat": "closing",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich melde mich bis Freitag.",
+      "en": "I'll get back to you by Friday.",
+      "cat": "closing",
+      "type": "phrase"
+    },
+    {
+      "de": "Schön, dass wir das geklärt haben.",
+      "en": "Glad we got that sorted.",
+      "cat": "closing",
+      "type": "phrase"
+    },
+    {
+      "de": "Danke für deine Zeit.",
+      "en": "Thanks for your time.",
+      "cat": "closing",
+      "type": "phrase"
+    },
+    {
+      "de": "Lass uns nächste Woche sprechen.",
+      "en": "Let's talk next week.",
+      "cat": "closing",
+      "type": "phrase"
+    },
+    {
+      "de": "Wir hören voneinander.",
+      "en": "We'll be in touch.",
+      "cat": "closing",
+      "type": "phrase"
+    },
+    {
+      "de": "Schönen Tag noch.",
+      "en": "Have a great day.",
+      "cat": "closing",
+      "type": "phrase"
+    },
+    {
+      "de": "Schönen Feierabend.",
+      "en": "Have a nice evening.",
+      "cat": "closing",
+      "type": "phrase"
+    },
+    {
+      "de": "Lass uns die Sitzung beenden.",
+      "en": "Let's wrap up the meeting.",
+      "cat": "closing",
+      "type": "phrase"
+    },
+    {
+      "de": "Lass uns über die Konditionen sprechen.",
+      "en": "Let's talk about the terms.",
+      "cat": "negotiation",
+      "type": "phrase"
+    },
+    {
+      "de": "Welches Budget habt ihr im Kopf?",
+      "en": "What budget do you have in mind?",
+      "cat": "negotiation",
+      "type": "phrase"
+    },
+    {
+      "de": "Das ist außerhalb unserer Preisspanne.",
+      "en": "That's outside our price range.",
+      "cat": "negotiation",
+      "type": "phrase"
+    },
+    {
+      "de": "Können wir über den Preis verhandeln?",
+      "en": "Can we negotiate on the price?",
+      "cat": "negotiation",
+      "type": "phrase"
+    },
+    {
+      "de": "Bei welcher Menge wird es interessant?",
+      "en": "At what volume does it become interesting?",
+      "cat": "negotiation",
+      "type": "phrase"
+    },
+    {
+      "de": "Gibt es Spielraum?",
+      "en": "Is there room to move?",
+      "cat": "negotiation",
+      "type": "phrase"
+    },
+    {
+      "de": "Was ist dein bestes Angebot?",
+      "en": "What's your best offer?",
+      "cat": "negotiation",
+      "type": "phrase"
+    },
+    {
+      "de": "Das müssen wir unterbieten.",
+      "en": "We need to beat that.",
+      "cat": "negotiation",
+      "type": "phrase"
+    },
+    {
+      "de": "Wir haben günstigere Alternativen.",
+      "en": "We have cheaper alternatives.",
+      "cat": "negotiation",
+      "type": "phrase"
+    },
+    {
+      "de": "Was springt für uns dabei raus?",
+      "en": "What's in it for us?",
+      "cat": "negotiation",
+      "type": "phrase"
+    },
+    {
+      "de": "Welchen Mehrwert bringt das?",
+      "en": "What value does this add?",
+      "cat": "negotiation",
+      "type": "phrase"
+    },
+    {
+      "de": "Wir brauchen bessere Konditionen.",
+      "en": "We need better terms.",
+      "cat": "negotiation",
+      "type": "phrase"
+    },
+    {
+      "de": "Bei dem Preis können wir nicht mitgehen.",
+      "en": "We can't go for that price.",
+      "cat": "negotiation",
+      "type": "phrase"
+    },
+    {
+      "de": "Was ist mit dem Mengenrabatt?",
+      "en": "What about volume discount?",
+      "cat": "negotiation",
+      "type": "phrase"
+    },
+    {
+      "de": "Können wir die Zahlungsbedingungen anpassen?",
+      "en": "Can we adjust the payment terms?",
+      "cat": "negotiation",
+      "type": "phrase"
+    },
+    {
+      "de": "Lass uns einen Kompromiss finden.",
+      "en": "Let's find a compromise.",
+      "cat": "negotiation",
+      "type": "phrase"
+    },
+    {
+      "de": "Was wäre für dich akzeptabel?",
+      "en": "What would be acceptable for you?",
+      "cat": "negotiation",
+      "type": "phrase"
+    },
+    {
+      "de": "Treffen wir uns in der Mitte.",
+      "en": "Let's meet in the middle.",
+      "cat": "negotiation",
+      "type": "phrase"
+    },
+    {
+      "de": "Das ist nicht verhandelbar.",
+      "en": "That's non-negotiable.",
+      "cat": "negotiation",
+      "type": "phrase"
+    },
+    {
+      "de": "Wir sind flexibel bei der Laufzeit.",
+      "en": "We're flexible on the duration.",
+      "cat": "negotiation",
+      "type": "phrase"
+    },
+    {
+      "de": "Wie sieht die Bezahlung aus?",
+      "en": "How does payment work?",
+      "cat": "negotiation",
+      "type": "phrase"
+    },
+    {
+      "de": "Wann müssten wir entscheiden?",
+      "en": "When would we need to decide?",
+      "cat": "negotiation",
+      "type": "phrase"
+    },
+    {
+      "de": "Gibt es einen Frühbucherrabatt?",
+      "en": "Is there an early bird discount?",
+      "cat": "negotiation",
+      "type": "phrase"
+    },
+    {
+      "de": "Was sind die Stornobedingungen?",
+      "en": "What are the cancellation terms?",
+      "cat": "negotiation",
+      "type": "phrase"
+    },
+    {
+      "de": "Können wir das in Raten zahlen?",
+      "en": "Can we pay in installments?",
+      "cat": "negotiation",
+      "type": "phrase"
+    },
+    {
+      "de": "Das ist ein faires Angebot.",
+      "en": "That's a fair offer.",
+      "cat": "negotiation",
+      "type": "phrase"
+    },
+    {
+      "de": "Wir brauchen Exklusivität.",
+      "en": "We need exclusivity.",
+      "cat": "negotiation",
+      "type": "phrase"
+    },
+    {
+      "de": "Was ist die Mindestabnahme?",
+      "en": "What's the minimum order quantity?",
+      "cat": "negotiation",
+      "type": "phrase"
+    },
+    {
+      "de": "Können wir das Volumen über die Zeit aufteilen?",
+      "en": "Can we split the volume over time?",
+      "cat": "negotiation",
+      "type": "phrase"
+    },
+    {
+      "de": "Lass uns das Win-Win gestalten.",
+      "en": "Let's make this win-win.",
+      "cat": "negotiation",
+      "type": "phrase"
+    },
+    {
+      "de": "Wir sind im Zeitplan.",
+      "en": "We're on schedule.",
+      "cat": "project",
+      "type": "phrase"
+    },
+    {
+      "de": "Wir liegen hinter dem Zeitplan.",
+      "en": "We're behind schedule.",
+      "cat": "project",
+      "type": "phrase"
+    },
+    {
+      "de": "Wir sind dem Zeitplan voraus.",
+      "en": "We're ahead of schedule.",
+      "cat": "project",
+      "type": "phrase"
+    },
+    {
+      "de": "Die Deadline rückt näher.",
+      "en": "The deadline is approaching.",
+      "cat": "project",
+      "type": "phrase"
+    },
+    {
+      "de": "Wir schaffen das nicht bis Freitag.",
+      "en": "We won't make it by Friday.",
+      "cat": "project",
+      "type": "phrase"
+    },
+    {
+      "de": "Können wir die Deadline verschieben?",
+      "en": "Can we push the deadline?",
+      "cat": "project",
+      "type": "phrase"
+    },
+    {
+      "de": "Was ist der aktuelle Stand?",
+      "en": "What's the current status?",
+      "cat": "project",
+      "type": "phrase"
+    },
+    {
+      "de": "Wo stehen wir gerade?",
+      "en": "Where do we stand right now?",
+      "cat": "project",
+      "type": "phrase"
+    },
+    {
+      "de": "Gibt es Blocker?",
+      "en": "Are there any blockers?",
+      "cat": "project",
+      "type": "phrase"
+    },
+    {
+      "de": "Ich bin auf X blockiert.",
+      "en": "I'm blocked on X.",
+      "cat": "project",
+      "type": "phrase"
+    },
+    {
+      "de": "Wer kann mir hier weiterhelfen?",
+      "en": "Who can help me out here?",
+      "cat": "project",
+      "type": "phrase"
+    },
+    {
+      "de": "Lass uns das priorisieren.",
+      "en": "Let's prioritize this.",
+      "cat": "project",
+      "type": "phrase"
+    },
+    {
+      "de": "Das ist nicht mehr in Scope.",
+      "en": "That's out of scope now.",
+      "cat": "project",
+      "type": "phrase"
+    },
+    {
+      "de": "Können wir den Scope reduzieren?",
+      "en": "Can we reduce the scope?",
+      "cat": "project",
+      "type": "phrase"
+    },
+    {
+      "de": "Wir brauchen mehr Ressourcen.",
+      "en": "We need more resources.",
+      "cat": "project",
+      "type": "phrase"
+    },
+    {
+      "de": "Können wir externe Hilfe holen?",
+      "en": "Can we get external help?",
+      "cat": "project",
+      "type": "phrase"
+    },
+    {
+      "de": "Wie ist die Burndown-Rate?",
+      "en": "How's the burndown rate?",
+      "cat": "project",
+      "type": "phrase"
+    },
+    {
+      "de": "Wir haben ein Bottleneck.",
+      "en": "We have a bottleneck.",
+      "cat": "project",
+      "type": "phrase"
+    },
+    {
+      "de": "Das Risiko sollten wir managen.",
+      "en": "We should manage that risk.",
+      "cat": "project",
+      "type": "phrase"
+    },
+    {
+      "de": "Wir liegen im Budget.",
+      "en": "We're within budget.",
+      "cat": "project",
+      "type": "phrase"
+    },
+    {
+      "de": "Wir laufen aus dem Budget.",
+      "en": "We're going over budget.",
+      "cat": "project",
+      "type": "phrase"
+    },
+    {
+      "de": "Lass uns den Status updaten.",
+      "en": "Let's update the status.",
+      "cat": "project",
+      "type": "phrase"
+    },
+    {
+      "de": "Wer ist der Stakeholder?",
+      "en": "Who is the stakeholder?",
+      "cat": "project",
+      "type": "phrase"
+    },
+    {
+      "de": "Können wir einen Quick Win finden?",
+      "en": "Can we find a quick win?",
+      "cat": "project",
+      "type": "phrase"
+    },
+    {
+      "de": "Das ist Stand der Dinge.",
+      "en": "That's where things stand.",
+      "cat": "project",
+      "type": "phrase"
+    },
+    {
+      "de": "Die Zahlen sehen gut aus.",
+      "en": "The numbers look good.",
+      "cat": "numbers",
+      "type": "phrase"
+    },
+    {
+      "de": "Der Umsatz ist gestiegen.",
+      "en": "Revenue has increased.",
+      "cat": "numbers",
+      "type": "phrase"
+    },
+    {
+      "de": "Der Umsatz ist gesunken.",
+      "en": "Revenue has decreased.",
+      "cat": "numbers",
+      "type": "phrase"
+    },
+    {
+      "de": "Wir liegen 15 Prozent über dem Vorjahr.",
+      "en": "We're 15 percent above last year.",
+      "cat": "numbers",
+      "type": "phrase"
+    },
+    {
+      "de": "Die Marge ist zu niedrig.",
+      "en": "The margin is too low.",
+      "cat": "numbers",
+      "type": "phrase"
+    },
+    {
+      "de": "Wir müssen die Kosten senken.",
+      "en": "We need to cut costs.",
+      "cat": "numbers",
+      "type": "phrase"
+    },
+    {
+      "de": "Was ist der ROI?",
+      "en": "What's the ROI?",
+      "cat": "numbers",
+      "type": "phrase"
+    },
+    {
+      "de": "Die Conversion Rate liegt bei 3 Prozent.",
+      "en": "The conversion rate is at 3 percent.",
+      "cat": "numbers",
+      "type": "phrase"
+    },
+    {
+      "de": "Der Warenkorbwert ist gestiegen.",
+      "en": "The average order value has gone up.",
+      "cat": "numbers",
+      "type": "phrase"
+    },
+    {
+      "de": "Die Klickrate ist gefallen.",
+      "en": "The click-through rate has dropped.",
+      "cat": "numbers",
+      "type": "phrase"
+    },
+    {
+      "de": "Wir sehen einen klaren Trend.",
+      "en": "We see a clear trend.",
+      "cat": "numbers",
+      "type": "phrase"
+    },
+    {
+      "de": "Die Daten sind eindeutig.",
+      "en": "The data is conclusive.",
+      "cat": "numbers",
+      "type": "phrase"
+    },
+    {
+      "de": "Wir brauchen mehr Datenpunkte.",
+      "en": "We need more data points.",
+      "cat": "numbers",
+      "type": "phrase"
+    },
+    {
+      "de": "Das ist statistisch signifikant.",
+      "en": "That's statistically significant.",
+      "cat": "numbers",
+      "type": "phrase"
+    },
+    {
+      "de": "Bezogen auf das Quartal...",
+      "en": "Compared to the quarter...",
+      "cat": "numbers",
+      "type": "phrase"
+    },
+    {
+      "de": "Im Vergleich zum Vormonat...",
+      "en": "Compared to last month...",
+      "cat": "numbers",
+      "type": "phrase"
+    },
+    {
+      "de": "Wir haben unsere Ziele übertroffen.",
+      "en": "We exceeded our targets.",
+      "cat": "numbers",
+      "type": "phrase"
+    },
+    {
+      "de": "Wir haben das Ziel verfehlt.",
+      "en": "We missed the target.",
+      "cat": "numbers",
+      "type": "phrase"
+    },
+    {
+      "de": "Das war auf einem Allzeithoch.",
+      "en": "That was at an all-time high.",
+      "cat": "numbers",
+      "type": "phrase"
+    },
+    {
+      "de": "Die Tendenz ist positiv.",
+      "en": "The trend is positive.",
+      "cat": "numbers",
+      "type": "phrase"
+    },
+    {
+      "de": "Besprechung",
+      "en": "meeting",
+      "cat": "meeting",
+      "type": "vocab"
+    },
+    {
+      "de": "Telefonkonferenz",
+      "en": "conference call",
+      "cat": "meeting",
+      "type": "vocab"
+    },
+    {
+      "de": "Videoanruf",
+      "en": "video call",
+      "cat": "meeting",
+      "type": "vocab"
+    },
+    {
+      "de": "Tagesordnung",
+      "en": "agenda",
+      "cat": "meeting",
+      "type": "vocab"
+    },
+    {
+      "de": "Protokoll",
+      "en": "minutes",
+      "cat": "meeting",
+      "type": "vocab"
+    },
+    {
+      "de": "Teilnehmer",
+      "en": "participant",
+      "cat": "meeting",
+      "type": "vocab"
+    },
+    {
+      "de": "Moderator",
+      "en": "facilitator",
+      "cat": "meeting",
+      "type": "vocab"
+    },
+    {
+      "de": "Bildschirm teilen",
+      "en": "share screen",
+      "cat": "meeting",
+      "type": "vocab"
+    },
+    {
+      "de": "stummschalten",
+      "en": "to mute",
+      "cat": "meeting",
+      "type": "vocab"
+    },
+    {
+      "de": "Stummschaltung aufheben",
+      "en": "to unmute",
+      "cat": "meeting",
+      "type": "vocab"
+    },
+    {
+      "de": "Wortmeldung",
+      "en": "raise hand",
+      "cat": "meeting",
+      "type": "vocab"
+    },
+    {
+      "de": "Wartebereich",
+      "en": "waiting room",
+      "cat": "meeting",
+      "type": "vocab"
+    },
+    {
+      "de": "Gruppenraum",
+      "en": "breakout room",
+      "cat": "meeting",
+      "type": "vocab"
+    },
+    {
+      "de": "absagen",
+      "en": "to cancel",
+      "cat": "meeting",
+      "type": "vocab"
+    },
+    {
+      "de": "verschieben",
+      "en": "to reschedule",
+      "cat": "meeting",
+      "type": "vocab"
+    },
+    {
+      "de": "einladen",
+      "en": "to invite",
+      "cat": "meeting",
+      "type": "vocab"
+    },
+    {
+      "de": "absagen (kurzfristig)",
+      "en": "to drop out",
+      "cat": "meeting",
+      "type": "vocab"
+    },
+    {
+      "de": "Folgetermin",
+      "en": "follow-up",
+      "cat": "meeting",
+      "type": "vocab"
+    },
+    {
+      "de": "Kick-off",
+      "en": "kick-off",
+      "cat": "meeting",
+      "type": "vocab"
+    },
+    {
+      "de": "Zwischenstand",
+      "en": "status update",
+      "cat": "meeting",
+      "type": "vocab"
+    },
+    {
+      "de": "Tagesordnungspunkt",
+      "en": "agenda item",
+      "cat": "meeting",
+      "type": "vocab"
+    },
+    {
+      "de": "Sonstiges",
+      "en": "any other business",
+      "cat": "meeting",
+      "type": "vocab"
+    },
+    {
+      "de": "Pause",
+      "en": "break",
+      "cat": "meeting",
+      "type": "vocab"
+    },
+    {
+      "de": "Abschluss",
+      "en": "wrap-up",
+      "cat": "meeting",
+      "type": "vocab"
+    },
+    {
+      "de": "Aufzeichnung",
+      "en": "recording",
+      "cat": "meeting",
+      "type": "vocab"
+    },
+    {
+      "de": "Aufgabenliste",
+      "en": "to-do list",
+      "cat": "meeting",
+      "type": "vocab"
+    },
+    {
+      "de": "Aktionspunkt",
+      "en": "action item",
+      "cat": "meeting",
+      "type": "vocab"
+    },
+    {
+      "de": "Verantwortlicher",
+      "en": "owner",
+      "cat": "meeting",
+      "type": "vocab"
+    },
+    {
+      "de": "Frist",
+      "en": "deadline",
+      "cat": "meeting",
+      "type": "vocab"
+    },
+    {
+      "de": "Ergebnis",
+      "en": "outcome",
+      "cat": "meeting",
+      "type": "vocab"
+    },
+    {
+      "de": "Geschäft",
+      "en": "business",
+      "cat": "business",
+      "type": "vocab"
+    },
+    {
+      "de": "Unternehmen",
+      "en": "company",
+      "cat": "business",
+      "type": "vocab"
+    },
+    {
+      "de": "Firma",
+      "en": "firm",
+      "cat": "business",
+      "type": "vocab"
+    },
+    {
+      "de": "Konzern",
+      "en": "corporation",
+      "cat": "business",
+      "type": "vocab"
+    },
+    {
+      "de": "Geschäftsführer",
+      "en": "managing director",
+      "cat": "business",
+      "type": "vocab"
+    },
+    {
+      "de": "Vorstand",
+      "en": "executive board",
+      "cat": "business",
+      "type": "vocab"
+    },
+    {
+      "de": "Mitarbeiter",
+      "en": "employee",
+      "cat": "business",
+      "type": "vocab"
+    },
+    {
+      "de": "Kollege",
+      "en": "colleague",
+      "cat": "business",
+      "type": "vocab"
+    },
+    {
+      "de": "Vorgesetzter",
+      "en": "supervisor",
+      "cat": "business",
+      "type": "vocab"
+    },
+    {
+      "de": "Abteilung",
+      "en": "department",
+      "cat": "business",
+      "type": "vocab"
+    },
+    {
+      "de": "Team",
+      "en": "team",
+      "cat": "business",
+      "type": "vocab"
+    },
+    {
+      "de": "Branche",
+      "en": "industry",
+      "cat": "business",
+      "type": "vocab"
+    },
+    {
+      "de": "Markt",
+      "en": "market",
+      "cat": "business",
+      "type": "vocab"
+    },
+    {
+      "de": "Wettbewerb",
+      "en": "competition",
+      "cat": "business",
+      "type": "vocab"
+    },
+    {
+      "de": "Mitbewerber",
+      "en": "competitor",
+      "cat": "business",
+      "type": "vocab"
+    },
+    {
+      "de": "Marktanteil",
+      "en": "market share",
+      "cat": "business",
+      "type": "vocab"
+    },
+    {
+      "de": "Kunde",
+      "en": "customer",
+      "cat": "business",
+      "type": "vocab"
+    },
+    {
+      "de": "Klient",
+      "en": "client",
+      "cat": "business",
+      "type": "vocab"
+    },
+    {
+      "de": "Lieferant",
+      "en": "supplier",
+      "cat": "business",
+      "type": "vocab"
+    },
+    {
+      "de": "Partner",
+      "en": "partner",
+      "cat": "business",
+      "type": "vocab"
+    },
+    {
+      "de": "Beziehung",
+      "en": "relationship",
+      "cat": "business",
+      "type": "vocab"
+    },
+    {
+      "de": "Auftrag",
+      "en": "order",
+      "cat": "business",
+      "type": "vocab"
+    },
+    {
+      "de": "Vertrag",
+      "en": "contract",
+      "cat": "business",
+      "type": "vocab"
+    },
+    {
+      "de": "Vereinbarung",
+      "en": "agreement",
+      "cat": "business",
+      "type": "vocab"
+    },
+    {
+      "de": "Strategie",
+      "en": "strategy",
+      "cat": "business",
+      "type": "vocab"
+    },
+    {
+      "de": "Ziel",
+      "en": "goal",
+      "cat": "business",
+      "type": "vocab"
+    },
+    {
+      "de": "Vorhaben",
+      "en": "initiative",
+      "cat": "business",
+      "type": "vocab"
+    },
+    {
+      "de": "Projekt",
+      "en": "project",
+      "cat": "business",
+      "type": "vocab"
+    },
+    {
+      "de": "Aufgabe",
+      "en": "task",
+      "cat": "business",
+      "type": "vocab"
+    },
+    {
+      "de": "Verantwortung",
+      "en": "responsibility",
+      "cat": "business",
+      "type": "vocab"
+    },
+    {
+      "de": "Umsatz",
+      "en": "revenue",
+      "cat": "money",
+      "type": "vocab"
+    },
+    {
+      "de": "Gewinn",
+      "en": "profit",
+      "cat": "money",
+      "type": "vocab"
+    },
+    {
+      "de": "Verlust",
+      "en": "loss",
+      "cat": "money",
+      "type": "vocab"
+    },
+    {
+      "de": "Kosten",
+      "en": "costs",
+      "cat": "money",
+      "type": "vocab"
+    },
+    {
+      "de": "Ausgaben",
+      "en": "expenses",
+      "cat": "money",
+      "type": "vocab"
+    },
+    {
+      "de": "Einnahmen",
+      "en": "income",
+      "cat": "money",
+      "type": "vocab"
+    },
+    {
+      "de": "Budget",
+      "en": "budget",
+      "cat": "money",
+      "type": "vocab"
+    },
+    {
+      "de": "Rechnung",
+      "en": "invoice",
+      "cat": "money",
+      "type": "vocab"
+    },
+    {
+      "de": "Zahlung",
+      "en": "payment",
+      "cat": "money",
+      "type": "vocab"
+    },
+    {
+      "de": "Überweisung",
+      "en": "bank transfer",
+      "cat": "money",
+      "type": "vocab"
+    },
+    {
+      "de": "Mehrwertsteuer",
+      "en": "VAT",
+      "cat": "money",
+      "type": "vocab"
+    },
+    {
+      "de": "Rabatt",
+      "en": "discount",
+      "cat": "money",
+      "type": "vocab"
+    },
+    {
+      "de": "Preis",
+      "en": "price",
+      "cat": "money",
+      "type": "vocab"
+    },
+    {
+      "de": "Angebot",
+      "en": "quote",
+      "cat": "money",
+      "type": "vocab"
+    },
+    {
+      "de": "Kostenvoranschlag",
+      "en": "estimate",
+      "cat": "money",
+      "type": "vocab"
+    },
+    {
+      "de": "Marge",
+      "en": "margin",
+      "cat": "money",
+      "type": "vocab"
+    },
+    {
+      "de": "Wachstum",
+      "en": "growth",
+      "cat": "money",
+      "type": "vocab"
+    },
+    {
+      "de": "Rückgang",
+      "en": "decline",
+      "cat": "money",
+      "type": "vocab"
+    },
+    {
+      "de": "Anstieg",
+      "en": "increase",
+      "cat": "money",
+      "type": "vocab"
+    },
+    {
+      "de": "Senkung",
+      "en": "decrease",
+      "cat": "money",
+      "type": "vocab"
+    },
+    {
+      "de": "Prognose",
+      "en": "forecast",
+      "cat": "money",
+      "type": "vocab"
+    },
+    {
+      "de": "Hochrechnung",
+      "en": "projection",
+      "cat": "money",
+      "type": "vocab"
+    },
+    {
+      "de": "Quartal",
+      "en": "quarter",
+      "cat": "money",
+      "type": "vocab"
+    },
+    {
+      "de": "Geschäftsjahr",
+      "en": "fiscal year",
+      "cat": "money",
+      "type": "vocab"
+    },
+    {
+      "de": "Bilanz",
+      "en": "balance sheet",
+      "cat": "money",
+      "type": "vocab"
+    },
+    {
+      "de": "Cashflow",
+      "en": "cash flow",
+      "cat": "money",
+      "type": "vocab"
+    },
+    {
+      "de": "Investition",
+      "en": "investment",
+      "cat": "money",
+      "type": "vocab"
+    },
+    {
+      "de": "Rendite",
+      "en": "return",
+      "cat": "money",
+      "type": "vocab"
+    },
+    {
+      "de": "Anteil",
+      "en": "share",
+      "cat": "money",
+      "type": "vocab"
+    },
+    {
+      "de": "Schätzung",
+      "en": "approximation",
+      "cat": "money",
+      "type": "vocab"
+    },
+    {
+      "de": "Onlineshop",
+      "en": "online shop",
+      "cat": "ecommerce",
+      "type": "vocab"
+    },
+    {
+      "de": "Webseite",
+      "en": "website",
+      "cat": "ecommerce",
+      "type": "vocab"
+    },
+    {
+      "de": "Startseite",
+      "en": "homepage",
+      "cat": "ecommerce",
+      "type": "vocab"
+    },
+    {
+      "de": "Produktseite",
+      "en": "product page",
+      "cat": "ecommerce",
+      "type": "vocab"
+    },
+    {
+      "de": "Warenkorb",
+      "en": "shopping cart",
+      "cat": "ecommerce",
+      "type": "vocab"
+    },
+    {
+      "de": "Kasse",
+      "en": "checkout",
+      "cat": "ecommerce",
+      "type": "vocab"
+    },
+    {
+      "de": "Bestellung",
+      "en": "order",
+      "cat": "ecommerce",
+      "type": "vocab"
+    },
+    {
+      "de": "Versand",
+      "en": "shipping",
+      "cat": "ecommerce",
+      "type": "vocab"
+    },
+    {
+      "de": "Lieferung",
+      "en": "delivery",
+      "cat": "ecommerce",
+      "type": "vocab"
+    },
+    {
+      "de": "Lager",
+      "en": "warehouse",
+      "cat": "ecommerce",
+      "type": "vocab"
+    },
+    {
+      "de": "Lagerbestand",
+      "en": "stock",
+      "cat": "ecommerce",
+      "type": "vocab"
+    },
+    {
+      "de": "Retoure",
+      "en": "return",
+      "cat": "ecommerce",
+      "type": "vocab"
+    },
+    {
+      "de": "Erstattung",
+      "en": "refund",
+      "cat": "ecommerce",
+      "type": "vocab"
+    },
+    {
+      "de": "Kundenservice",
+      "en": "customer service",
+      "cat": "ecommerce",
+      "type": "vocab"
+    },
+    {
+      "de": "Bewertung",
+      "en": "review",
+      "cat": "ecommerce",
+      "type": "vocab"
+    },
+    {
+      "de": "Werbung",
+      "en": "advertising",
+      "cat": "ecommerce",
+      "type": "vocab"
+    },
+    {
+      "de": "Kampagne",
+      "en": "campaign",
+      "cat": "ecommerce",
+      "type": "vocab"
+    },
+    {
+      "de": "Zielgruppe",
+      "en": "target audience",
+      "cat": "ecommerce",
+      "type": "vocab"
+    },
+    {
+      "de": "Marke",
+      "en": "brand",
+      "cat": "ecommerce",
+      "type": "vocab"
+    },
+    {
+      "de": "Markenbekanntheit",
+      "en": "brand awareness",
+      "cat": "ecommerce",
+      "type": "vocab"
+    },
+    {
+      "de": "Reichweite",
+      "en": "reach",
+      "cat": "ecommerce",
+      "type": "vocab"
+    },
+    {
+      "de": "Konversion",
+      "en": "conversion",
+      "cat": "ecommerce",
+      "type": "vocab"
+    },
+    {
+      "de": "Klickrate",
+      "en": "click-through rate",
+      "cat": "ecommerce",
+      "type": "vocab"
+    },
+    {
+      "de": "Suchmaschine",
+      "en": "search engine",
+      "cat": "ecommerce",
+      "type": "vocab"
+    },
+    {
+      "de": "Suchmaschinenoptimierung",
+      "en": "SEO",
+      "cat": "ecommerce",
+      "type": "vocab"
+    },
+    {
+      "de": "Produktdatenfeed",
+      "en": "product feed",
+      "cat": "ecommerce",
+      "type": "vocab"
+    },
+    {
+      "de": "Newsletter",
+      "en": "newsletter",
+      "cat": "ecommerce",
+      "type": "vocab"
+    },
+    {
+      "de": "Influencer",
+      "en": "influencer",
+      "cat": "ecommerce",
+      "type": "vocab"
+    },
+    {
+      "de": "Empfehlung",
+      "en": "recommendation",
+      "cat": "ecommerce",
+      "type": "vocab"
+    },
+    {
+      "de": "Treueprogramm",
+      "en": "loyalty program",
+      "cat": "ecommerce",
+      "type": "vocab"
+    },
+    {
+      "de": "vereinbaren",
+      "en": "to agree",
+      "cat": "verbs",
+      "type": "vocab"
+    },
+    {
+      "de": "verhandeln",
+      "en": "to negotiate",
+      "cat": "verbs",
+      "type": "vocab"
+    },
+    {
+      "de": "anbieten",
+      "en": "to offer",
+      "cat": "verbs",
+      "type": "vocab"
+    },
+    {
+      "de": "ablehnen",
+      "en": "to decline",
+      "cat": "verbs",
+      "type": "vocab"
+    },
+    {
+      "de": "annehmen",
+      "en": "to accept",
+      "cat": "verbs",
+      "type": "vocab"
+    },
+    {
+      "de": "klären",
+      "en": "to clarify",
+      "cat": "verbs",
+      "type": "vocab"
+    },
+    {
+      "de": "diskutieren",
+      "en": "to discuss",
+      "cat": "verbs",
+      "type": "vocab"
+    },
+    {
+      "de": "vorschlagen",
+      "en": "to suggest",
+      "cat": "verbs",
+      "type": "vocab"
+    },
+    {
+      "de": "empfehlen",
+      "en": "to recommend",
+      "cat": "verbs",
+      "type": "vocab"
+    },
+    {
+      "de": "umsetzen",
+      "en": "to implement",
+      "cat": "verbs",
+      "type": "vocab"
+    },
+    {
+      "de": "starten",
+      "en": "to launch",
+      "cat": "verbs",
+      "type": "vocab"
+    },
+    {
+      "de": "einführen",
+      "en": "to roll out",
+      "cat": "verbs",
+      "type": "vocab"
+    },
+    {
+      "de": "abschließen",
+      "en": "to finalize",
+      "cat": "verbs",
+      "type": "vocab"
+    },
+    {
+      "de": "prüfen",
+      "en": "to review",
+      "cat": "verbs",
+      "type": "vocab"
+    },
+    {
+      "de": "bestätigen",
+      "en": "to confirm",
+      "cat": "verbs",
+      "type": "vocab"
+    },
+    {
+      "de": "freigeben",
+      "en": "to approve",
+      "cat": "verbs",
+      "type": "vocab"
+    },
+    {
+      "de": "veranschaulichen",
+      "en": "to illustrate",
+      "cat": "verbs",
+      "type": "vocab"
+    },
+    {
+      "de": "erklären",
+      "en": "to explain",
+      "cat": "verbs",
+      "type": "vocab"
+    },
+    {
+      "de": "verstehen",
+      "en": "to understand",
+      "cat": "verbs",
+      "type": "vocab"
+    },
+    {
+      "de": "umgehen mit",
+      "en": "to handle",
+      "cat": "verbs",
+      "type": "vocab"
+    },
+    {
+      "de": "managen",
+      "en": "to manage",
+      "cat": "verbs",
+      "type": "vocab"
+    },
+    {
+      "de": "leiten",
+      "en": "to lead",
+      "cat": "verbs",
+      "type": "vocab"
+    },
+    {
+      "de": "koordinieren",
+      "en": "to coordinate",
+      "cat": "verbs",
+      "type": "vocab"
+    },
+    {
+      "de": "delegieren",
+      "en": "to delegate",
+      "cat": "verbs",
+      "type": "vocab"
+    },
+    {
+      "de": "outsourcen",
+      "en": "to outsource",
+      "cat": "verbs",
+      "type": "vocab"
+    },
+    {
+      "de": "kommunizieren",
+      "en": "to communicate",
+      "cat": "verbs",
+      "type": "vocab"
+    },
+    {
+      "de": "rückmelden",
+      "en": "to follow up",
+      "cat": "verbs",
+      "type": "vocab"
+    },
+    {
+      "de": "weitergeben",
+      "en": "to pass on",
+      "cat": "verbs",
+      "type": "vocab"
+    },
+    {
+      "de": "informieren",
+      "en": "to inform",
+      "cat": "verbs",
+      "type": "vocab"
+    },
+    {
+      "de": "aktualisieren",
+      "en": "to update",
+      "cat": "verbs",
+      "type": "vocab"
+    },
+    {
+      "de": "skalieren",
+      "en": "to scale",
+      "cat": "verbs",
+      "type": "vocab"
+    },
+    {
+      "de": "wachsen",
+      "en": "to grow",
+      "cat": "verbs",
+      "type": "vocab"
+    },
+    {
+      "de": "schrumpfen",
+      "en": "to shrink",
+      "cat": "verbs",
+      "type": "vocab"
+    },
+    {
+      "de": "optimieren",
+      "en": "to optimize",
+      "cat": "verbs",
+      "type": "vocab"
+    },
+    {
+      "de": "verbessern",
+      "en": "to improve",
+      "cat": "verbs",
+      "type": "vocab"
+    },
+    {
+      "de": "umstrukturieren",
+      "en": "to restructure",
+      "cat": "verbs",
+      "type": "vocab"
+    },
+    {
+      "de": "automatisieren",
+      "en": "to automate",
+      "cat": "verbs",
+      "type": "vocab"
+    },
+    {
+      "de": "analysieren",
+      "en": "to analyze",
+      "cat": "verbs",
+      "type": "vocab"
+    },
+    {
+      "de": "auswerten",
+      "en": "to evaluate",
+      "cat": "verbs",
+      "type": "vocab"
+    },
+    {
+      "de": "messen",
+      "en": "to measure",
+      "cat": "verbs",
+      "type": "vocab"
+    },
+    {
+      "de": "Termin",
+      "en": "appointment",
+      "cat": "time",
+      "type": "vocab"
+    },
+    {
+      "de": "Zeitplan",
+      "en": "schedule",
+      "cat": "time",
+      "type": "vocab"
+    },
+    {
+      "de": "Zeitrahmen",
+      "en": "time frame",
+      "cat": "time",
+      "type": "vocab"
+    },
+    {
+      "de": "Meilenstein",
+      "en": "milestone",
+      "cat": "time",
+      "type": "vocab"
+    },
+    {
+      "de": "Phase",
+      "en": "phase",
+      "cat": "time",
+      "type": "vocab"
+    },
+    {
+      "de": "Etappe",
+      "en": "stage",
+      "cat": "time",
+      "type": "vocab"
+    },
+    {
+      "de": "Übergangszeit",
+      "en": "transition period",
+      "cat": "time",
+      "type": "vocab"
+    },
+    {
+      "de": "morgen",
+      "en": "tomorrow",
+      "cat": "time",
+      "type": "vocab"
+    },
+    {
+      "de": "gestern",
+      "en": "yesterday",
+      "cat": "time",
+      "type": "vocab"
+    },
+    {
+      "de": "übermorgen",
+      "en": "the day after tomorrow",
+      "cat": "time",
+      "type": "vocab"
+    },
+    {
+      "de": "kurzfristig",
+      "en": "short-term",
+      "cat": "time",
+      "type": "vocab"
+    },
+    {
+      "de": "mittelfristig",
+      "en": "mid-term",
+      "cat": "time",
+      "type": "vocab"
+    },
+    {
+      "de": "langfristig",
+      "en": "long-term",
+      "cat": "time",
+      "type": "vocab"
+    },
+    {
+      "de": "sofort",
+      "en": "immediately",
+      "cat": "time",
+      "type": "vocab"
+    },
+    {
+      "de": "dringend",
+      "en": "urgent",
+      "cat": "time",
+      "type": "vocab"
+    },
+    {
+      "de": "verspätet",
+      "en": "delayed",
+      "cat": "time",
+      "type": "vocab"
+    },
+    {
+      "de": "rechtzeitig",
+      "en": "on time",
+      "cat": "time",
+      "type": "vocab"
+    },
+    {
+      "de": "im Plan",
+      "en": "on track",
+      "cat": "time",
+      "type": "vocab"
+    },
+    {
+      "de": "vorzeitig",
+      "en": "ahead of time",
+      "cat": "time",
+      "type": "vocab"
+    },
+    {
+      "de": "geplant",
+      "en": "scheduled",
+      "cat": "time",
+      "type": "vocab"
+    },
+    {
+      "de": "verfügbar",
+      "en": "available",
+      "cat": "time",
+      "type": "vocab"
+    },
+    {
+      "de": "nicht verfügbar",
+      "en": "unavailable",
+      "cat": "time",
+      "type": "vocab"
+    },
+    {
+      "de": "verfügbarer Slot",
+      "en": "open slot",
+      "cat": "time",
+      "type": "vocab"
+    },
+    {
+      "de": "Frist erfüllen",
+      "en": "to meet a deadline",
+      "cat": "time",
+      "type": "vocab"
+    },
+    {
+      "de": "Frist überschreiten",
+      "en": "to miss a deadline",
+      "cat": "time",
+      "type": "vocab"
+    },
+    {
+      "de": "wichtig",
+      "en": "important",
+      "cat": "adjectives",
+      "type": "vocab"
+    },
+    {
+      "de": "praktisch",
+      "en": "practical",
+      "cat": "adjectives",
+      "type": "vocab"
+    },
+    {
+      "de": "kritisch",
+      "en": "critical",
+      "cat": "adjectives",
+      "type": "vocab"
+    },
+    {
+      "de": "relevant",
+      "en": "relevant",
+      "cat": "adjectives",
+      "type": "vocab"
+    },
+    {
+      "de": "irrelevant",
+      "en": "irrelevant",
+      "cat": "adjectives",
+      "type": "vocab"
+    },
+    {
+      "de": "klar",
+      "en": "clear",
+      "cat": "adjectives",
+      "type": "vocab"
+    },
+    {
+      "de": "unklar",
+      "en": "unclear",
+      "cat": "adjectives",
+      "type": "vocab"
+    },
+    {
+      "de": "machbar",
+      "en": "feasible",
+      "cat": "adjectives",
+      "type": "vocab"
+    },
+    {
+      "de": "unmöglich",
+      "en": "impossible",
+      "cat": "adjectives",
+      "type": "vocab"
+    },
+    {
+      "de": "rentabel",
+      "en": "profitable",
+      "cat": "adjectives",
+      "type": "vocab"
+    },
+    {
+      "de": "kostspielig",
+      "en": "costly",
+      "cat": "adjectives",
+      "type": "vocab"
+    },
+    {
+      "de": "günstig",
+      "en": "affordable",
+      "cat": "adjectives",
+      "type": "vocab"
+    },
+    {
+      "de": "effizient",
+      "en": "efficient",
+      "cat": "adjectives",
+      "type": "vocab"
+    },
+    {
+      "de": "wirksam",
+      "en": "effective",
+      "cat": "adjectives",
+      "type": "vocab"
+    },
+    {
+      "de": "skalierbar",
+      "en": "scalable",
+      "cat": "adjectives",
+      "type": "vocab"
+    },
+    {
+      "de": "nachhaltig",
+      "en": "sustainable",
+      "cat": "adjectives",
+      "type": "vocab"
+    },
+    {
+      "de": "zuverlässig",
+      "en": "reliable",
+      "cat": "adjectives",
+      "type": "vocab"
+    },
+    {
+      "de": "konsistent",
+      "en": "consistent",
+      "cat": "adjectives",
+      "type": "vocab"
+    },
+    {
+      "de": "flexibel",
+      "en": "flexible",
+      "cat": "adjectives",
+      "type": "vocab"
+    },
+    {
+      "de": "starr",
+      "en": "rigid",
+      "cat": "adjectives",
+      "type": "vocab"
+    },
+    {
+      "de": "komplex",
+      "en": "complex",
+      "cat": "adjectives",
+      "type": "vocab"
+    },
+    {
+      "de": "einfach",
+      "en": "simple",
+      "cat": "adjectives",
+      "type": "vocab"
+    },
+    {
+      "de": "umfassend",
+      "en": "comprehensive",
+      "cat": "adjectives",
+      "type": "vocab"
+    },
+    {
+      "de": "detailliert",
+      "en": "detailed",
+      "cat": "adjectives",
+      "type": "vocab"
+    },
+    {
+      "de": "oberflächlich",
+      "en": "superficial",
+      "cat": "adjectives",
+      "type": "vocab"
+    },
+    {
+      "de": "genau",
+      "en": "accurate",
+      "cat": "adjectives",
+      "type": "vocab"
+    },
+    {
+      "de": "ungenau",
+      "en": "inaccurate",
+      "cat": "adjectives",
+      "type": "vocab"
+    },
+    {
+      "de": "innovativ",
+      "en": "innovative",
+      "cat": "adjectives",
+      "type": "vocab"
+    },
+    {
+      "de": "konservativ",
+      "en": "conservative",
+      "cat": "adjectives",
+      "type": "vocab"
+    },
+    {
+      "de": "wettbewerbsfähig",
+      "en": "competitive",
+      "cat": "adjectives",
+      "type": "vocab"
+    },
+    {
+      "de": "trotzdem",
+      "en": "nevertheless",
+      "cat": "connectors",
+      "type": "vocab"
+    },
+    {
+      "de": "dennoch",
+      "en": "however",
+      "cat": "connectors",
+      "type": "vocab"
+    },
+    {
+      "de": "außerdem",
+      "en": "moreover",
+      "cat": "connectors",
+      "type": "vocab"
+    },
+    {
+      "de": "zusätzlich",
+      "en": "additionally",
+      "cat": "connectors",
+      "type": "vocab"
+    },
+    {
+      "de": "darüber hinaus",
+      "en": "furthermore",
+      "cat": "connectors",
+      "type": "vocab"
+    },
+    {
+      "de": "jedoch",
+      "en": "yet",
+      "cat": "connectors",
+      "type": "vocab"
+    },
+    {
+      "de": "also",
+      "en": "so",
+      "cat": "connectors",
+      "type": "vocab"
+    },
+    {
+      "de": "daher",
+      "en": "therefore",
+      "cat": "connectors",
+      "type": "vocab"
+    },
+    {
+      "de": "deshalb",
+      "en": "thus",
+      "cat": "connectors",
+      "type": "vocab"
+    },
+    {
+      "de": "infolgedessen",
+      "en": "consequently",
+      "cat": "connectors",
+      "type": "vocab"
+    },
+    {
+      "de": "im Gegensatz dazu",
+      "en": "in contrast",
+      "cat": "connectors",
+      "type": "vocab"
+    },
+    {
+      "de": "andererseits",
+      "en": "on the other hand",
+      "cat": "connectors",
+      "type": "vocab"
+    },
+    {
+      "de": "einerseits",
+      "en": "on the one hand",
+      "cat": "connectors",
+      "type": "vocab"
+    },
+    {
+      "de": "gleichzeitig",
+      "en": "at the same time",
+      "cat": "connectors",
+      "type": "vocab"
+    },
+    {
+      "de": "letztendlich",
+      "en": "ultimately",
+      "cat": "connectors",
+      "type": "vocab"
+    },
+    {
+      "de": "im Wesentlichen",
+      "en": "essentially",
+      "cat": "connectors",
+      "type": "vocab"
+    },
+    {
+      "de": "im Grunde",
+      "en": "basically",
+      "cat": "connectors",
+      "type": "vocab"
+    },
+    {
+      "de": "tatsächlich",
+      "en": "actually",
+      "cat": "connectors",
+      "type": "vocab"
+    },
+    {
+      "de": "ehrlich gesagt",
+      "en": "honestly",
+      "cat": "connectors",
+      "type": "vocab"
+    },
+    {
+      "de": "offen gesagt",
+      "en": "frankly",
+      "cat": "connectors",
+      "type": "vocab"
+    },
+    {
+      "de": "kurz gesagt",
+      "en": "in short",
+      "cat": "connectors",
+      "type": "vocab"
+    },
+    {
+      "de": "zusammenfassend",
+      "en": "in summary",
+      "cat": "connectors",
+      "type": "vocab"
+    },
+    {
+      "de": "abschließend",
+      "en": "in conclusion",
+      "cat": "connectors",
+      "type": "vocab"
+    },
+    {
+      "de": "zum Beispiel",
+      "en": "for example",
+      "cat": "connectors",
+      "type": "vocab"
+    },
+    {
+      "de": "unter anderem",
+      "en": "among other things",
+      "cat": "connectors",
+      "type": "vocab"
+    },
+    {
+      "de": "insbesondere",
+      "en": "in particular",
+      "cat": "connectors",
+      "type": "vocab"
+    },
+    {
+      "de": "vor allem",
+      "en": "primarily",
+      "cat": "connectors",
+      "type": "vocab"
+    },
+    {
+      "de": "im Allgemeinen",
+      "en": "in general",
+      "cat": "connectors",
+      "type": "vocab"
+    },
+    {
+      "de": "in der Regel",
+      "en": "as a rule",
+      "cat": "connectors",
+      "type": "vocab"
+    },
+    {
+      "de": "im Idealfall",
+      "en": "ideally",
+      "cat": "connectors",
+      "type": "vocab"
+    },
+    {
+      "de": "Datei",
+      "en": "file",
+      "cat": "tech",
+      "type": "vocab"
+    },
+    {
+      "de": "Ordner",
+      "en": "folder",
+      "cat": "tech",
+      "type": "vocab"
+    },
+    {
+      "de": "Anhang",
+      "en": "attachment",
+      "cat": "tech",
+      "type": "vocab"
+    },
+    {
+      "de": "hochladen",
+      "en": "to upload",
+      "cat": "tech",
+      "type": "vocab"
+    },
+    {
+      "de": "herunterladen",
+      "en": "to download",
+      "cat": "tech",
+      "type": "vocab"
+    },
+    {
+      "de": "speichern",
+      "en": "to save",
+      "cat": "tech",
+      "type": "vocab"
+    },
+    {
+      "de": "freigeben",
+      "en": "to share",
+      "cat": "tech",
+      "type": "vocab"
+    },
+    {
+      "de": "Link",
+      "en": "link",
+      "cat": "tech",
+      "type": "vocab"
+    },
+    {
+      "de": "Zugriff",
+      "en": "access",
+      "cat": "tech",
+      "type": "vocab"
+    },
+    {
+      "de": "Berechtigung",
+      "en": "permission",
+      "cat": "tech",
+      "type": "vocab"
+    },
+    {
+      "de": "Passwort",
+      "en": "password",
+      "cat": "tech",
+      "type": "vocab"
+    },
+    {
+      "de": "Konto",
+      "en": "account",
+      "cat": "tech",
+      "type": "vocab"
+    },
+    {
+      "de": "Anmeldung",
+      "en": "login",
+      "cat": "tech",
+      "type": "vocab"
+    },
+    {
+      "de": "abmelden",
+      "en": "to log out",
+      "cat": "tech",
+      "type": "vocab"
+    },
+    {
+      "de": "Aktualisierung",
+      "en": "update",
+      "cat": "tech",
+      "type": "vocab"
+    },
+    {
+      "de": "Sicherung",
+      "en": "backup",
+      "cat": "tech",
+      "type": "vocab"
+    },
+    {
+      "de": "Fehler",
+      "en": "bug",
+      "cat": "tech",
+      "type": "vocab"
+    },
+    {
+      "de": "Funktion",
+      "en": "feature",
+      "cat": "tech",
+      "type": "vocab"
+    },
+    {
+      "de": "Anforderung",
+      "en": "requirement",
+      "cat": "tech",
+      "type": "vocab"
+    },
+    {
+      "de": "Schnittstelle",
+      "en": "interface",
+      "cat": "tech",
+      "type": "vocab"
+    },
+    {
+      "de": "Plattform",
+      "en": "platform",
+      "cat": "tech",
+      "type": "vocab"
+    },
+    {
+      "de": "Werkzeug",
+      "en": "tool",
+      "cat": "tech",
+      "type": "vocab"
+    },
+    {
+      "de": "Dashboard",
+      "en": "dashboard",
+      "cat": "tech",
+      "type": "vocab"
+    },
+    {
+      "de": "Datenbank",
+      "en": "database",
+      "cat": "tech",
+      "type": "vocab"
+    },
+    {
+      "de": "Server",
+      "en": "server",
+      "cat": "tech",
+      "type": "vocab"
+    },
+    {
+      "de": "Cloud",
+      "en": "cloud",
+      "cat": "tech",
+      "type": "vocab"
+    },
+    {
+      "de": "Integration",
+      "en": "integration",
+      "cat": "tech",
+      "type": "vocab"
+    },
+    {
+      "de": "Workflow",
+      "en": "workflow",
+      "cat": "tech",
+      "type": "vocab"
+    },
+    {
+      "de": "Bereitstellung",
+      "en": "deployment",
+      "cat": "tech",
+      "type": "vocab"
+    },
+    {
+      "de": "Bericht",
+      "en": "report",
+      "cat": "tech",
+      "type": "vocab"
+    },
+    {
+      "de": "Wochenende",
+      "en": "weekend",
+      "cat": "smalltalk",
+      "type": "vocab"
+    },
+    {
+      "de": "Urlaub",
+      "en": "vacation",
+      "cat": "smalltalk",
+      "type": "vocab"
+    },
+    {
+      "de": "Feiertag",
+      "en": "holiday",
+      "cat": "smalltalk",
+      "type": "vocab"
+    },
+    {
+      "de": "Geschäftsreise",
+      "en": "business trip",
+      "cat": "smalltalk",
+      "type": "vocab"
+    },
+    {
+      "de": "Familie",
+      "en": "family",
+      "cat": "smalltalk",
+      "type": "vocab"
+    },
+    {
+      "de": "Hobby",
+      "en": "hobby",
+      "cat": "smalltalk",
+      "type": "vocab"
+    },
+    {
+      "de": "Wetter",
+      "en": "weather",
+      "cat": "smalltalk",
+      "type": "vocab"
+    },
+    {
+      "de": "Stadt",
+      "en": "city",
+      "cat": "smalltalk",
+      "type": "vocab"
+    },
+    {
+      "de": "Land",
+      "en": "country",
+      "cat": "smalltalk",
+      "type": "vocab"
+    },
+    {
+      "de": "Zeitzone",
+      "en": "time zone",
+      "cat": "smalltalk",
+      "type": "vocab"
+    },
+    {
+      "de": "Frühstück",
+      "en": "breakfast",
+      "cat": "smalltalk",
+      "type": "vocab"
+    },
+    {
+      "de": "Mittagessen",
+      "en": "lunch",
+      "cat": "smalltalk",
+      "type": "vocab"
+    },
+    {
+      "de": "Abendessen",
+      "en": "dinner",
+      "cat": "smalltalk",
+      "type": "vocab"
+    },
+    {
+      "de": "Kaffeepause",
+      "en": "coffee break",
+      "cat": "smalltalk",
+      "type": "vocab"
+    },
+    {
+      "de": "Wochenmitte",
+      "en": "midweek",
+      "cat": "smalltalk",
+      "type": "vocab"
+    },
+    {
+      "de": "Wochenanfang",
+      "en": "early week",
+      "cat": "smalltalk",
+      "type": "vocab"
+    },
+    {
+      "de": "Wochenende verbracht mit",
+      "en": "spent the weekend with",
+      "cat": "smalltalk",
+      "type": "vocab"
+    },
+    {
+      "de": "Sport treiben",
+      "en": "to work out",
+      "cat": "smalltalk",
+      "type": "vocab"
+    },
+    {
+      "de": "ausgehen",
+      "en": "to go out",
+      "cat": "smalltalk",
+      "type": "vocab"
+    },
+    {
+      "de": "entspannen",
+      "en": "to relax",
+      "cat": "smalltalk",
+      "type": "vocab"
+    },
+    {
+      "de": "müde sein",
+      "en": "to be tired",
+      "cat": "smalltalk",
+      "type": "vocab"
+    },
+    {
+      "de": "beschäftigt sein",
+      "en": "to be busy",
+      "cat": "smalltalk",
+      "type": "vocab"
+    },
+    {
+      "de": "viel los",
+      "en": "a lot going on",
+      "cat": "smalltalk",
+      "type": "vocab"
+    },
+    {
+      "de": "alles im grünen Bereich",
+      "en": "all good",
+      "cat": "smalltalk",
+      "type": "vocab"
+    },
+    {
+      "de": "geht so",
+      "en": "so-so",
+      "cat": "smalltalk",
+      "type": "vocab"
+    }
+  ]
+}
