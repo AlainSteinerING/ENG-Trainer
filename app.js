@@ -240,9 +240,10 @@ function renderLearn(content) {
             <div class="card-text">${escapeHtml(item.de)}</div>
             <div class="card-hint">Antippen zum Umdrehen</div>
           </div>
-          <div class="flip-face flip-back">
+      <div class="flip-face flip-back">
             <div class="card-cat">English</div>
             <div class="card-text">${escapeHtml(item.en)}</div>
+            <div class="card-hint">Antippen zum Zurückdrehen</div>
           </div>
         </div>
       </div>
@@ -494,9 +495,11 @@ function compareStrings(a, b) {
 function flipCard() {
   const fc = document.getElementById('flip-card');
   if (!fc) return;
-  fc.classList.add('flipped');
-  state.cardFlipped = true;
-  document.getElementById('rating-area').style.display = 'block';
+  fc.classList.toggle('flipped');
+  state.cardFlipped = fc.classList.contains('flipped');
+  if (state.cardFlipped) {
+    document.getElementById('rating-area').style.display = 'block';
+  }
 }
 
 function rateCard(quality) {
